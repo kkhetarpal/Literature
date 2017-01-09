@@ -2,6 +2,8 @@
 Repository of my reading lists, paper summaries, and corresponding links
 
 2016
+* DenseCap: Fully Convolutional Localization Networks for Dense Captioning [[Paper]](http://cs.stanford.edu/people/karpathy/densecap.pdf)
+  * Johnson, Justin and Karpathy, Andrej and Fei-Fei, Li, CVPR
 * We Are Humor Beings: Understanding and Predicting Visual Humor [[Paper]](https://arxiv.org/abs/1512.04407)
   * Arjun Chandrasekaran, Ashwin K. Vijayakumar, Stanislaw Antol, Mohit Bansal, Dhruv Batra, C. Lawrence Zitnick, Devi Parikh
 * MovieQA: Understanding Stories in Movies Through Question-Answering [[Paper]](http://movieqa.cs.toronto.edu/static/files/CVPR2016_MovieQA.pdf)
