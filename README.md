@@ -1,6 +1,10 @@
 # Literature
-Repository of my reading lists, paper summaries corresponding links
+Repository of my reading lists, paper summaries, and corresponding links
 
 2016
 * Deep Compositional Captioning: Describing Novel Object Categories Without Paired Training Data [[Paper]](https://arxiv.org/abs/1511.05284)
-* Anticipating Visual Representations From Unlabeled Video [Paper](http://web.mit.edu/vondrick/prediction.pdf)
+  * Lisa Anne Hendricks, Subhashini Venugopalan, Marcus Rohrbach, Raymond Mooney, Kate Saenko, Trevor Darrell, CVPR
+* Stacked Attention Networks for Image Question Answering [[Paper]](https://arxiv.org/abs/1511.02274)
+  * Zichao Yang, Xiaodong He, Jianfeng Gao, Li Deng, Alex Smola, CVPR
+*  Neural Module Networks [[Paper]](http://web.mit.edu/vondrick/prediction.pdf)
+  * Jacob Andreas, Marcus Rohrbach, Trevor Darrell, Dan Klein, CVPR
