@@ -52,3 +52,7 @@ AAAI
   * Niket Tandon, Charles Hariman, Jacopo Urbani, Anna Rohrbach, Marcus Rohrbach, Gerhard Weikum
 * Connecting the Dots Using Contextual Information Hidden in Text and Images[[Paper]](http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/11916/12225)
   * Md Abdul Kader, Sheikh Motahar Naim, Arnold P. Boedihardjo, M. Shahriar Hossain
+* Listen, Attend, and Walk: Neural Mapping of Navigational Instructions to Action Sequences[[Paper]](http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/12522/12021)
+  * Hongyuan Mei, Mohit Bansal, Matthew R. Walter
+* Addressing a Question Answering Challenge by Combining Statistical Methods with Inductive Rule Learning and Reasoning[[Paper]](http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/12345/12022)
+  * Arindam Mitra, Chitta Baral
