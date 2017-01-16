@@ -59,10 +59,15 @@ AAAI
 * Building End-To-End Dialogue Systems Using Generative Hierarchical Neural Network Models[[Paper]](http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/11957/12160)
   * Iulian V. Serban, Alessandro Sordoni, Yoshua Bengio, Aaron Courville, Joelle Pineau
   
- ECCV 
+  
+ECCV 
 * Segmentation from Natural Language Expressions [[Paper]](http://rd.springer.com/chapter/10.1007/978-3-319-46448-0_7)
   * Ronghang Hu, Marcus Rohrbach, Trevor Darrell
 * Contextual Priming and Feedback for Faster R-CNN [[Paper]](http://rd.springer.com/chapter/10.1007/978-3-319-46448-0_20)
   * Abhinav Shrivastava, Abhinav Gupta 
 * Deep Learning the City: Quantifying Urban Perception at a Global Scale [[Paper]](http://rd.springer.com/chapter/10.1007/978-3-319-46448-0_12)
   * Abhimanyu Dubey, Nikhil Naik, Devi Parikh, Ramesh Raskar, César A. Hidalgo 
+* The Curious Robot: Learning Visual Representations via Physical Interactions [[Paper]](http://rd.springer.com/chapter/10.1007/978-3-319-46475-6_1)
+  * Lerrel Pinto, Dhiraj Gandhi, Yuanfeng Han, Yong-Lae Park, Abhinav Gupta
+ * Modeling Context in Referring Expressions [[Paper]](http://rd.springer.com/chapter/10.1007/978-3-319-46475-6_5)
+  * Licheng Yu, Patrick Poirson, Shan Yang, Alexander C. Berg, Tamara L. Berg
