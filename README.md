@@ -79,3 +79,5 @@ ECCV
   * Genevieve Patterson, James Hays
 * Learning Temporal Transformations from Time-Lapse Videos [[Paper]](http://rd.springer.com/chapter/10.1007/978-3-319-46484-8_16)
   * Yipin Zhou, Tamara L. Berg
+* Leveraging Visual Question Answering for Image-Caption Ranking [[Paper]](https://arxiv.org/abs/1605.01379)
+  *  X. Lin, D. Parikh
