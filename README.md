@@ -2,6 +2,8 @@
 Repository of my reading lists, paper summaries, and corresponding links
 
 2016
+
+CVPR
 * DenseCap: Fully Convolutional Localization Networks for Dense Captioning [[Paper]](http://cs.stanford.edu/people/karpathy/densecap.pdf)
   * Johnson, Justin and Karpathy, Andrej and Fei-Fei, Li, CVPR
 * We Are Humor Beings: Understanding and Predicting Visual Humor [[Paper]](https://arxiv.org/abs/1512.04407)
@@ -38,3 +40,15 @@ Repository of my reading lists, paper summaries, and corresponding links
   * Sean Bell, C. Lawrence Zitnick, Kavita Bala, Ross Girshick, CVPR
 * Predicting Motivations of Actions by Leveraging Text [[Paper]](http://web.mit.edu/vondrick/intention.pdf)
   * Carl Vondrick, Deniz Oktay, Hamed Pirsiavash, Antonio Torralba
+  
+AAAI  
+* Are Elephants Bigger than Butterflies? Reasoning about Sizes of Object [[Paper]](http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/12510/12114)
+  * Hessam Bagherinezhad, Hannaneh Hajishirzi, Yejin Choi, Ali Farhadi 
+* SentiCap: Generating Image Descriptions with Sentiments[[Paper]](http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/12501/12132)
+  * Alexander Patrick Mathews, Lexing Xie, Xuming He
+* Affective Personalization of a Social Robot Tutor for Children's Second Language Skills[[Paper]](http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/11759/12184)
+  * Goren Gordon, Samuel Spaulding, Jacqueline Kory Westlund, Jin Joo Lee, Luke Plummer, Marayna Martinez, Madhurima Das, Cynthia Breazeal
+* Commonsense in Parts: Mining Part-Whole Relations from the Web and Image Tags[[Paper]](http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/12337/11590)
+  * Niket Tandon, Charles Hariman, Jacopo Urbani, Anna Rohrbach, Marcus Rohrbach, Gerhard Weikum
+* Connecting the Dots Using Contextual Information Hidden in Text and Images[[Paper]](http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/11916/12225)
+  * Md Abdul Kader, Sheikh Motahar Naim, Arnold P. Boedihardjo, M. Shahriar Hossain
