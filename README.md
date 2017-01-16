@@ -71,3 +71,11 @@ ECCV
   * Lerrel Pinto, Dhiraj Gandhi, Yuanfeng Han, Yong-Lae Park, Abhinav Gupta
 * Modeling Context in Referring Expressions [[Paper]](http://rd.springer.com/chapter/10.1007/978-3-319-46475-6_5)
   * Licheng Yu, Patrick Poirson, Shan Yang, Alexander C. Berg, Tamara L. Berg
+* “What Happens If...” Learning to Predict the Effect of Forces in Images  [[Paper]](http://rd.springer.com/chapter/10.1007/978-3-319-46493-0_17)
+  * Roozbeh Mottaghi, Mohammad Rastegari, Abhinav Gupta, Ali Farhadi
+* Learning Visual Storylines with Skipping Recurrent Neural Networks [[Paper]](http://rd.springer.com/chapter/10.1007/978-3-319-46454-1_5)
+  * Gunnar A. Sigurdsson, Xinlei Chen, Abhinav Gupta
+* COCO Attributes: Attributes for People, Animals, and Objects [[Paper]](http://rd.springer.com/chapter/10.1007/978-3-319-46466-4_6)
+  * Genevieve Patterson, James Hays
+* Learning Temporal Transformations from Time-Lapse Videos [[Paper]](http://rd.springer.com/chapter/10.1007/978-3-319-46484-8_16)
+  * Yipin Zhou, Tamara L. Berg
