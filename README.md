@@ -69,5 +69,5 @@ ECCV
   * Abhimanyu Dubey, Nikhil Naik, Devi Parikh, Ramesh Raskar, César A. Hidalgo 
 * The Curious Robot: Learning Visual Representations via Physical Interactions [[Paper]](http://rd.springer.com/chapter/10.1007/978-3-319-46475-6_1)
   * Lerrel Pinto, Dhiraj Gandhi, Yuanfeng Han, Yong-Lae Park, Abhinav Gupta
- * Modeling Context in Referring Expressions [[Paper]](http://rd.springer.com/chapter/10.1007/978-3-319-46475-6_5)
+* Modeling Context in Referring Expressions [[Paper]](http://rd.springer.com/chapter/10.1007/978-3-319-46475-6_5)
   * Licheng Yu, Patrick Poirson, Shan Yang, Alexander C. Berg, Tamara L. Berg
