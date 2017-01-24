@@ -81,3 +81,9 @@ ECCV
   * Yipin Zhou, Tamara L. Berg
 * Leveraging Visual Question Answering for Image-Caption Ranking [[Paper]](https://arxiv.org/abs/1605.01379)
   *  X. Lin, D. Parikh
+
+ICLR 
+* Visualizing and Understanding Recurrent Networks [[Paper]](http://vision.stanford.edu/pdf/KarpathyICLR2016.pdf)
+  * Andrej Karpathy*, Justin Johnson*, Li Fei-Fei
+* PixelCNN++: Improving the PixelCNN with Discretized Logistic Mixture Likelihood and Other Modifications [[Paper]](https://openreview.net/pdf?id=BJrFC6ceg)
+  * Tim Salimans, Andrej Karpathy, Xi Chen, Diederik P. Kingma
