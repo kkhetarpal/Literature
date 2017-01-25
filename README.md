@@ -97,3 +97,5 @@ ICLR
   * Adji B. Dieng, Chong Wang, Jianfeng Gao, John Paisley
 * beta-VAE: Learning Basic Visual Concepts with a Constrained Variational Framework [[Paper]](https://openreview.net/pdf?id=Sy2fzU9gl)
   * Irina Higgins, Loic Matthey, Arka Pal, Christopher Burgess, Xavier Glorot, Matthew Botvinick, Shakir Mohamed, Alexander Lerchner
+*  Towards Understanding the Invertibility of Convolutional Neural Networks
+   * Anna C. Gilbert, Yi Zhang, Kibok Lee, Yuting Zhang, Honglak Lee
