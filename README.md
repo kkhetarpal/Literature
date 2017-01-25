@@ -93,4 +93,7 @@ ICLR
    * David Krueger, Tegan Maharaj, Janos Kramar, Mohammad Pezeshki, Nicolas Ballas, Nan Rosemary Ke, Anirudh Goyal, Yoshua Bengio, Aaron Courville, Christopher Pal
 * A Context-aware Attention Network for Interactive Question Answering [[Paper]](https://openreview.net/pdf?id=SkyQWDcex)
    * Huayu Li, Martin Renqiang Min, Yong Ge, Asim Kadav
-   
+* TopicRNN: A Recurrent Neural Network with Long-Range Semantic Dependency [[Paper]](https://openreview.net/pdf?id=rJbbOLcex)
+  * Adji B. Dieng, Chong Wang, Jianfeng Gao, John Paisley
+* beta-VAE: Learning Basic Visual Concepts with a Constrained Variational Framework [[Paper]](https://openreview.net/pdf?id=Sy2fzU9gl)
+  * Irina Higgins, Loic Matthey, Arka Pal, Christopher Burgess, Xavier Glorot, Matthew Botvinick, Shakir Mohamed, Alexander Lerchner
