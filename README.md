@@ -87,3 +87,10 @@ ICLR
   * Andrej Karpathy*, Justin Johnson*, Li Fei-Fei
 * PixelCNN++: Improving the PixelCNN with Discretized Logistic Mixture Likelihood and Other Modifications [[Paper]](https://openreview.net/pdf?id=BJrFC6ceg)
   * Tim Salimans, Andrej Karpathy, Xi Chen, Diederik P. Kingma
+* PixelVAE: A Latent Variable Model for Natural Images [[Paper]](https://openreview.net/pdf?id=BJKYvt5lg)
+  * Ishaan Gulrajani, Kundan Kumar, Faruk Ahmed, Adrien Ali Taiga, Francesco Visin, David Vazquez, Aaron Courville
+* Zoneout: Regularizing RNNs by Randomly Preserving Hidden Activations [[Paper]](https://openreview.net/pdf?id=rJqBEPcxe)
+   * David Krueger, Tegan Maharaj, Janos Kramar, Mohammad Pezeshki, Nicolas Ballas, Nan Rosemary Ke, Anirudh Goyal, Yoshua Bengio, Aaron Courville, Christopher Pal
+* A Context-aware Attention Network for Interactive Question Answering [[Paper]](https://openreview.net/pdf?id=SkyQWDcex)
+   * Huayu Li, Martin Renqiang Min, Yong Ge, Asim Kadav
+   
