@@ -117,3 +117,7 @@ ACL
   * Samuel R. Bowman, Jon Gauthier, Abhinav Rastogi, Raghav Gupta, Christopher D. Manning and Christopher Potts
 * Learning Language Games through Interaction [[Paper]](http://nlp.stanford.edu/pubs/wang2016games.pdf)
   * Sida I. Wang, Percy Liang and Christopher D. Manning
+* Natural Language Generation enhances human decision-making with uncertain information [[Paper]](https://arxiv.org/abs/1606.03254)
+  * Dimitra Gkatzia, Oliver Lemon and Verena Rieser
+*  On-line Active Reward Learning for Policy Optimisation in Spoken Dialogue Systems [[Paper]](https://arxiv.org/abs/1605.07669)
+  * Pei-Hao Su, Milica Gasic, Nikola Mrkšić, Lina M. Rojas Barahona, Stefan Ultes, David Vandyke, Tsung-Hsien Wen and Steve Young
