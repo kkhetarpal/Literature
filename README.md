@@ -106,3 +106,7 @@ ICRA
   * Marvin Zhang ; Zoe McCarthy ; Chelsea Finn ; Sergey Levine ; Pieter Abbeel
 * Deep learning for human part discovery in images [[Paper]](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7487304)
   * Gabriel L. Oliveira ; Abhinav Valada ; Claas Bollen ; Wolfram Burgard ; Thomas Brox
+* Cross-modal adaptation for RGB-D detection [[Paper]](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7487708)
+  * Judy Hoffman ; Saurabh Gupta ; Jian Leong ; Sergio Guadarrama ; Trevor Darrell
+* Understand scene categories by objects: A semantic regularized scene classifier using Convolutional Neural Networks [[Paper]](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7487381)
+  * Yiyi Liao ; Sarath Kodagoda ; Yue Wang ; Lei Shi ; Yong Liu
