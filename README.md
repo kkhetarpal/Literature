@@ -121,3 +121,6 @@ ACL
   * Dimitra Gkatzia, Oliver Lemon and Verena Rieser
 *  On-line Active Reward Learning for Policy Optimisation in Spoken Dialogue Systems [[Paper]](https://arxiv.org/abs/1605.07669)
   * Pei-Hao Su, Milica Gasic, Nikola Mrkšić, Lina M. Rojas Barahona, Stefan Ultes, David Vandyke, Tsung-Hsien Wen and Steve Young
+*  Generating Factoid Questions With Recurrent Neural Networks: The 30M Factoid Question-Answer Corpus [[Paper]](https://arxiv.org/abs/1603.06807)
+  * Iulian Vlad Serban, Alberto García-Durán, Caglar Gulcehre, Sungjin Ahn, Sarath Chandar, Aaron Courville and Yoshua Bengio
+
