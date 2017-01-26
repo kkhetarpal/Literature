@@ -99,3 +99,10 @@ ICLR
   * Irina Higgins, Loic Matthey, Arka Pal, Christopher Burgess, Xavier Glorot, Matthew Botvinick, Shakir Mohamed, Alexander Lerchner
 *  Towards Understanding the Invertibility of Convolutional Neural Networks
    * Anna C. Gilbert, Yi Zhang, Kibok Lee, Yuting Zhang, Honglak Lee
+
+
+ICRA
+* Learning deep neural network policies with continuous memory states [[Paper]](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7487174)
+  * Marvin Zhang ; Zoe McCarthy ; Chelsea Finn ; Sergey Levine ; Pieter Abbeel
+* Deep learning for human part discovery in images [[Paper]](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7487304)
+  * Gabriel L. Oliveira ; Abhinav Valada ; Claas Bollen ; Wolfram Burgard ; Thomas Brox
