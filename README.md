@@ -124,3 +124,20 @@ ACL
 *  Generating Factoid Questions With Recurrent Neural Networks: The 30M Factoid Question-Answer Corpus [[Paper]](https://arxiv.org/abs/1603.06807)
   * Iulian Vlad Serban, Alberto García-Durán, Caglar Gulcehre, Sungjin Ahn, Sarath Chandar, Aaron Courville and Yoshua Bengio
 
+IJCAI
+* What are Where: Inferring Containment Relations from Videos [[Paper]](https://www.ijcai.org/Proceedings/16/Papers/483.pdf)
+  * Wei Liang, Yixin Zhu and Songchu Zhu
+* Beyond object recognition: Deep visual sentiment analysis via affective concept supervision and transfer [[Paper]](https://www.ijcai.org/Proceedings/16/Papers/492.pdf)
+  * Jingwen Wang, Jianlong Fu, Yong Xu and Tao Mei
+* Unsupervised Alignment of Actions in Video with Text Descriptions [[Paper]](http://www.cse.iitd.ac.in/~parags/papers/uaavtd-ijcai16.pdf)
+  * Young Chol Song, Iftekhar Naim, Abdullah Al Mamun, Kaustubh Kulkarni, Parag Singla, Jiebo Luo, Daniel Gildea and Henry Kautz
+* Scene Text Detection in Video by Learning Locally and Globally [[Paper]](https://www.ijcai.org/Proceedings/16/Papers/376.pdf)
+  * Wei-Yi Pei, Shu Tian and Xu-Cheng Yin
+* Learning to Detect Concepts from Webly-Labeled Video Data [[Paper]](https://www.ijcai.org/Proceedings/16/Papers/250.pdf)
+  * Junwei Liang, Lu Jiang, Deyu Meng and Alex Hauptmann
+* AI for Cognitive Film Studies - Semantic Q/A with Video and Eye-Tracking Data for Analysing Human Visual Perception [[Paper]](https://www.ijcai.org/Proceedings/16/Papers/374.pdf)
+  * Jakob Suchan and Mehul Bhatt
+* Learning Deep Intrinsic Video Representation by Exploring Temporal Coherence and Graph Structure [[Paper]](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/08/ijcai16_video.feature.learning.pdf)
+  * Yingwei Pan, Yehao Li, Ting Yao, Tao Mei, Houqiang Li and Yong Rui
+* Diversely Image Captioning via GroupTalk [[Paper]](https://www.ijcai.org/Proceedings/16/Papers/420.pdf)
+  * Zhuhao Wang, Fei Wu, Jun Xiao, Xi Li, Zitong Zhang and Yueting Zhuang
