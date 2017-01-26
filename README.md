@@ -110,3 +110,10 @@ ICRA
   * Judy Hoffman ; Saurabh Gupta ; Jian Leong ; Sergio Guadarrama ; Trevor Darrell
 * Understand scene categories by objects: A semantic regularized scene classifier using Convolutional Neural Networks [[Paper]](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7487381)
   * Yiyi Liao ; Sarath Kodagoda ; Yue Wang ; Lei Shi ; Yong Liu
+
+
+ACL
+* A Fast Unified Model for Parsing and Sentence Understanding [[Paper]](https://arxiv.org/abs/1603.06021)
+  * Samuel R. Bowman, Jon Gauthier, Abhinav Rastogi, Raghav Gupta, Christopher D. Manning and Christopher Potts
+* Learning Language Games through Interaction [[Paper]](http://nlp.stanford.edu/pubs/wang2016games.pdf)
+  * Sida I. Wang, Percy Liang and Christopher D. Manning
