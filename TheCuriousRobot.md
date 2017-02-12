@@ -5,9 +5,7 @@ Lerrel Pinto, Dhiraj Gandhi, Yuanfeng Han, Yong-Lae Park, Abhinav Gupta, ECCV 20
 
 ## Summary
 
-This paper addresses two threads:
-* learning of visual representations via active, physical interactions as opposed to passive data. 
-* learning in an unsupervised way.
+This paper addresses - how to learning visual representations via active, physical interactions as opposed to passive data in an unsupervised way.
 
 - Physical System
   - Baxter robot with a paralle jaw gripper and a tactile skin-sensor
