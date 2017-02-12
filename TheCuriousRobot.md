@@ -5,7 +5,7 @@ Lerrel Pinto, Dhiraj Gandhi, Yuanfeng Han, Yong-Lae Park, Abhinav Gupta, ECCV 20
 
 ## Summary
 
-This paper addresses - how to learning visual representations via active, physical interactions as opposed to passive data in an unsupervised way.
+This paper addresses - how to learning visual representations via active, physical interactions as opposed to passive data in an unsupervised way. This work is introduces a novel idea of using robotic tasks to train ConvNets as visual representations.
 
 - Physical System
   - Baxter robot with a paralle jaw gripper and a tactile skin-sensor has been used to perform robotic tasks to record data via physical interactions with the world
