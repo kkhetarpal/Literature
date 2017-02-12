@@ -12,10 +12,11 @@ This paper addresses - how to learn visual representations in an unsupervised wa
 
 - Dataset
   - Physical exploration data includes the following robotic-tasks:
-    * Grasping: in the interest of self-supervision system, the authors have used the dataset from 'learning to grasp from 50k tried and 700 robot hours' [40,287 grasps]
-    * Pushing: push interactions by the robot to record sensor readings for supervision [5,472 pushes on 70 objects]
+    * Grasping: contains around 5 images of the object grasped from multiple viewpoints in every successful grasp interaction [40,287 grasps]
+    * Pushing: contains 2 images of the object pushed in every push interaction [5,472 pushes on 70 objects]
     * Tactile Sensing: the robot with a highly sensitive tactile optical sensors has been used to obtain skin sensor readings [1372 observations on 100 diverse objects]
-    * Identity Vision: multiple images of the same object from different viewpoints [84,430 pairs of different viewpoints of the same object] 
+    * Identity Vision: multiple images of the same object from different viewpoints [84,430 pairs of different viewpoints of the same object]
+In total, they use 42K positive pairs of images and 42K negative pairs from different interactions
     
 - Approach
   * Planar Grasps: The grasp configuration lies in 3 dimensions, where $(x,y)$: represents the position of grasp point on the surface of a table and $\theta$ respresents the angle of the grasp. Training dataset consists of 37k failed instances and 3K successful instances. 
