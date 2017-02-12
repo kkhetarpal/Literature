@@ -8,7 +8,7 @@ Lerrel Pinto, Dhiraj Gandhi, Yuanfeng Han, Yong-Lae Park, Abhinav Gupta, ECCV 20
 This paper addresses - how to learning visual representations via active, physical interactions as opposed to passive data in an unsupervised way.
 
 - Physical System
-  - Baxter robot with a paralle jaw gripper and a tactile skin-sensor
+  - Baxter robot with a paralle jaw gripper and a tactile skin-sensor has been used to perform robotic tasks to record data via physical interactions with the world
 
 - Dataset
   - Physical exploration data includes
