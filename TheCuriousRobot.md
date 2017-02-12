@@ -5,9 +5,16 @@ Lerrel Pinto, Dhiraj Gandhi, Yuanfeng Han, Yong-Lae Park, Abhinav Gupta, ECCV 20
 
 ## Summary
 
-Most of the current methods to learn visual representations use passive observations such as images, and videos which are labeled for supervised learning. On the other hand, biological agents use active physical-interactions with the world to learn visual representations. This work introduces a system on a Baxter platform that uses four different type of interactions:
-* Pushing
-* Grasping
-* Tactile Sensing (Touching and Poking)
-* Identity Vision
+This paper addresses two threads:
+* learning of visual representations via active, physical interactions as opposed to passive data. 
+* learning in an unsupervised way.
 
+- Physical System
+  - Baxter robot with a paralle jaw gripper and a tactile skin-sensor
+
+- Dataset
+  - Physical exploration data includes
+    * Grasping: in the interest of self-supervision system, the authors have used the dataset from 'learning to grasp from 50k tried and 700 robot hours' [40,287 grasps]
+    * Pushing: push interactions by the robot to record sensor readings for supervision [5,472 pushes]
+    * Tactile Sensing: the robot with a highly sensitive tactile optical sensors has been used to obtain skin sensor readings [1372 observations]
+    * Identity Vision: multiple images of the same object from different viewpoints [84,430 pairs of different viewpoints of the same object] 
