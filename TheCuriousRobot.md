@@ -35,4 +35,6 @@ This paper addresses - how to learn visual representations in an unsupervised wa
     - layer 3: 386 kernels with a kernel size of 3 * 3
     - layer 4: 384 kernels with a kernel size of 3 * 3
     - each layer employs local response normalization and is followed by a spatial Max-Pooling of kernel size 3 * 3
+    - There are 2 fully connected layers after these 5 convolutional layers consisting of 4096 neurons
+    - A clone of the root network is maintained with shared weights for tasks which require two images
     
