@@ -69,7 +69,7 @@ ECCV
   * Abhimanyu Dubey, Nikhil Naik, Devi Parikh, Ramesh Raskar, César A. Hidalgo 
 * The Curious Robot: Learning Visual Representations via Physical Interactions [[Paper]](http://rd.springer.com/chapter/10.1007/978-3-319-46475-6_1)
   * Lerrel Pinto, Dhiraj Gandhi, Yuanfeng Han, Yong-Lae Park, Abhinav Gupta
-* Modeling Context in Referring Expressions [[Paper]](http://rd.springer.com/chapter/10.1007/978-3-319-46475-6_5)[[Summary]](https://github.com/kkhetarpal/Literature/blob/master/TheCuriousRobot.md)
+* Modeling Context in Referring Expressions [[Paper]](http://rd.springer.com/chapter/10.1007/978-3-319-46475-6_5) [[Summary]](https://github.com/kkhetarpal/Literature/blob/master/TheCuriousRobot.md)
   * Licheng Yu, Patrick Poirson, Shan Yang, Alexander C. Berg, Tamara L. Berg
 * “What Happens If...” Learning to Predict the Effect of Forces in Images  [[Paper]](http://rd.springer.com/chapter/10.1007/978-3-319-46493-0_17)
   * Roozbeh Mottaghi, Mohammad Rastegari, Abhinav Gupta, Ali Farhadi
