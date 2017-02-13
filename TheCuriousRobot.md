@@ -51,4 +51,6 @@ This paper addresses - how to learn visual representations in an unsupervised wa
      - The conv3 outputs from the root networks pass through the 1st layer of push network and the concatenated output is then passed further down the push network resulting in the MSE regression loss.
    * Poke Network: Output of the 1st fully connect of the root network is fed into this network. 
      - This network consists of a fully connect(fc) layer [512 neurons] followed by another fc layer with 2 neurons as the tactile prediction
-    
+   * Identity Similarity Embedding:
+     - Given a pair of images, one is passed through the root and the other through it's clone network.
+     - A cosine embedding loss on the 2nd fc layer is taken for feature embedding. This is backpropagated and the gradients of the two copies are accumulated and mean aggregated as for all other tasks
