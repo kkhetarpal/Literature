@@ -54,3 +54,7 @@ This paper addresses - how to learn visual representations in an unsupervised wa
    * Identity Similarity Embedding:
      - Given a pair of images, one is passed through the root and the other through it's clone network.
      - A cosine embedding loss on the 2nd fc layer is taken for feature embedding. This is backpropagated and the gradients of the two copies are accumulated and mean aggregated as for all other tasks
+
+- Training the network
+  * First stage: Initializes the root network upto 4th convolutional layer and the grasp network with Gaussian initialization. Train only the grasp network and the lower root network for 20k iterations on the grasp data.
+  * Second stage: Copy the learning of the first 4 layer from stage 1, For all 4 tasks a batch os 128 in size is prepared and sequentially input into the network. Weights are updated at the respective back-prop cycles of grasp, push, and poke, while the gradients for the root and clone networks are accumulated until one batch cycle of the tasks finishes. After all gradients have been accumulated, the mean aggregated and a weight update is performed.
