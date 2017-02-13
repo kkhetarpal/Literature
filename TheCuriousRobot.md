@@ -58,3 +58,13 @@ This paper addresses - how to learn visual representations in an unsupervised wa
 - Training the network
   * First stage: Initializes the root network upto 4th convolutional layer and the grasp network with Gaussian initialization. Train only the grasp network and the lower root network for 20k iterations on the grasp data.
   * Second stage: Copy the learning of the first 4 layer from stage 1, For all 4 tasks a batch os 128 in size is prepared and sequentially input into the network. Weights are updated at the respective back-prop cycles of grasp, push, and poke, while the gradients for the root and clone networks are accumulated until one batch cycle of the tasks finishes. After all gradients have been accumulated, the mean aggregated and a weight update is performed.
+
+- Experiments & Results
+  * Evaluating how effective the feature space is: 
+    - Experiment 1: The authors ran their learned network on 2500 ImageNet images corresponding to household items and find the images that brought maximum activations of neurons in layer 4 & 5 of the network: They observed that conv5 is able to correlate strong shape attributes such as spherical and circular objects.
+    - Experiment 2: Without fine tuning for the task of NN, they use 25 houshehold objects as query images and 2500 ImageNet images as training dataset. Using the conv5 layer feature space to perform NNs: they observe the results are based on shape attributes. 
+  * Evaluating the learned representations for image classification and retrieval:
+    - Experiment 1: Image classification using root network trained on robot-tasks is compared with AlexNet (trained on ImageNet), and other variants of root network (random init, identity data), and Auto-encoder trained on all robot data: Validates the correlation between robot-tasks and semantic classification tasks.
+    - The image classification task is also evaluated on UW RGBD dataset and Caltech-256 dataset.
+    - All results demonstrate that their network learns some features from the robot task training data which boosts its performance on ImageNet task.
+  
