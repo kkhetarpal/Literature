@@ -28,4 +28,11 @@ This paper addresses - how to learn visual representations in an unsupervised wa
   * Pose Invariance: The images in different interaction tasks contains images with multiple viewpoints of the same object. Given two images, the distance between the features should be small if the images are from the same robot interaction and large if the images are from different robot interactions.        
   
 - Network Architecture
-  * 
+  * In summary, the network architecture consists of a root network, which is augmented with specialized task networks originating from various levels of the root network where the levels depend on the complexity of the task.
+  * Root Network: Consists of 5 convolutional layers, where each conv layer uses a non linear ReLU as transfer function, and consists in 
+    - layer 1: 96 kernels with a kernel size of 11 * 11
+    - layer 2: 256 kernels with a kernel size of 5 * 5
+    - layer 3: 386 kernels with a kernel size of 3 * 3
+    - layer 4: 384 kernels with a kernel size of 3 * 3
+    - each layer employs local response normalization and is followed by a spatial Max-Pooling of kernel size 3 * 3
+    
