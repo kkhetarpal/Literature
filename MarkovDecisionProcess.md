@@ -27,3 +27,10 @@
   - Boundary between agent and its environment represents the 'absolute control' domain of agent and not its knowledge.
   - The thumb of rule followed is to consider anything that cannot be changed arbitrarily by the agent as the environment.
   - This is subjective to the states, actions, and the specific decision making task at hand.
+
+- Goals & Rewards 
+  - Reward comprises of a special signal an agent receives from the environment. An agent's goal is to maximize the cumulative reward in the long run that it receives.
+  - Reward Hypothesis states - that all goals and purposes can be thought of as the maximization of the expected value of the cumulative sum of the receieved scalar reward
+  - To ensure the agent learns correctly, rewards must indicate of 'what' we want to accomplish and not 'how' we want to accomplish. But isn't this what will lead to credit-assignment problem - This section of the book suggests rewarding the ultimate goal and not rewarding the steps that might lead to the goal. If rewarded for sub-goals, the agent might end up only learning to achieve those sub-goals and possibly not ever learn about the original goal. [Follow-up]
+  - Rewards are always and must be computed external to an agent i.e. in the environment. In other words, the agent's boundary is drawn at the limit of its control. This is done as the agent's ultimate goal is something over it has 'imperfect control'.
+  - Agent ends up defining its own internal reward or a sequence of such internal rewards. [Follow-up]
