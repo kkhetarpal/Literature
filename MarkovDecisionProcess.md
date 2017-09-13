@@ -1,4 +1,5 @@
-# Finite Markov Decision Process - Chapter 3 of Introduction to RL by Rich Sutton
+# Finite Markov Decision Process
+## Chapter 3 of Introduction to RL by Rich Sutton
 
 
 ## Summary Notes
