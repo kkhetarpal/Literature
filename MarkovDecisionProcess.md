@@ -43,3 +43,5 @@
   - Whereas, cases where the interface does not naturally break into sub-sequences are called continuing tasks. The final time step in such cases is not defined and hence the return formulation is problematic for such tasks and could itself be infinite.
   - For such continuing tasks, the agent tries to take actions such that it maximizes the expected discounted return over time. The return is then the sum of discounted rewards. Rewards of future time steps are discounted by a discount rate^(k) where k is the time step iterator.
   - Intuition behind the discounting: the reward received k time steps in the future is worth only (discount rate)^(k-1) times what it would be worth if it was received immediately. The idea is that discounting determines the present value of 'future' rewards. We do not know what actually the reward in future would be, this is an estimate hence discounted value of the future rewards' value.
+  - If discount is 0, the agent is only concerned with maximizing immediate reward i.e. Rt+1
+  - If discount is 1, the agent is more far-sighted and cares about the future rewards more than immediate reward.
