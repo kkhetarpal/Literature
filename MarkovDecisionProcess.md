@@ -1,8 +1,8 @@
 # Finite Markov Decision Process
-## Chapter 3 of Introduction to RL by Rich Sutton
-
-
 ## Summary Notes
+
+
+## References: Introduction to RL by Rich Sutton
 
 - The RL framework comprises of
   - An agent, which is an entity that learns and is the decision maker,
