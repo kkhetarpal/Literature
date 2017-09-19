@@ -46,8 +46,8 @@
   - If discount is 0, the agent is only concerned with maximizing immediate reward i.e. Rt+1
   - If discount is 1, the agent is more far-sighted and cares about the future rewards more than immediate reward.
  - The returns at successive time steps are related, Gt
-   Gt = Rt+1 +  (y)Rt+2 + (y)^2 * Rt+3 + (y)^3 * Rt+4 +   
-   Gt = Rt+1 +  (y){Rt+2 + (y) * Rt+3 + (y)^2 * Rt+4 +   }
+   Gt = Rt+1 +  (y)Rt+2 + (y)^2 * Rt+3 + (y)^3 * Rt+4 + .
+   Gt = Rt+1 +  (y){Rt+2 + (y) * Rt+3 + (y)^2 * Rt+4 + . }
    Gt = Rt+1 +  (y) Gt+1
 
 - Unifying Notation for Episodic & Continuous Returns:
