@@ -45,3 +45,11 @@
   - Intuition behind the discounting: the reward received k time steps in the future is worth only (discount rate)^(k-1) times what it would be worth if it was received immediately. The idea is that discounting determines the present value of 'future' rewards. We do not know what actually the reward in future would be, this is an estimate hence discounted value of the future rewards' value.
   - If discount is 0, the agent is only concerned with maximizing immediate reward i.e. Rt+1
   - If discount is 1, the agent is more far-sighted and cares about the future rewards more than immediate reward.
+ - The returns at successive time steps are related, Gt
+   Gt = Rt+1 +  (y)Rt+2 + (y)^2 * Rt+3 + (y)^3 * Rt+4 +   
+   Gt = Rt+1 +  (y){Rt+2 + (y) * Rt+3 + (y)^2 * Rt+4 +   }
+   Gt = Rt+1 +  (y) Gt+1
+
+- Unifying Notation for Episodic & Continuous Returns:
+  - In context of episodic tasks, we will almost never have to distinguish between different episodes. We will almost always be considering a particular single episode, or stating something that is true for all episodes.
+  - A single notation is accomplished by considering episode termination to be the entering of a special 'absorbing state' that transitions only to itself and that generates only rewards of zero.
