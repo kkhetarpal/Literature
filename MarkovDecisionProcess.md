@@ -53,3 +53,17 @@
 - Unifying Notation for Episodic & Continuous Returns:
   - In context of episodic tasks, we will almost never have to distinguish between different episodes. We will almost always be considering a particular single episode, or stating something that is true for all episodes.
   - A single notation is accomplished by considering episode termination to be the entering of a special 'absorbing state' that transitions only to itself and that generates only rewards of zero.
+  
+- The Markov Property
+ - Agent's decisions aka actions (At) are a function of the environment states At = F(St). Our main concern is not with the state but with deciding what actions we should take given a state signal of the environment.
+ - State Representation: 
+  - can be immediate sensations, a highly processed version of immediate sensations, a complex structure formed by a sequence of past sensations built over time. 
+  - is not expected to know hidden information from the environment but expected to know and contain all relevant sensory information from it's past and present.
+  - Ideally, a state signal would summarize the past sensations compactly in such a way that all the relevant information is retained.
+ - A state which is able to summarize the past information in it's current representation and this is independent of the previous states is known as Markov
+ - Formally, if the state signal has the Markov Property, then the environment response at t+1 depends only on the state and action representations at t
+ - If an environment has Markov property, then the one step dynamics enables us to predict the next state and expected next reward given the current state and action
+ - The actions taken (i.e. the best policy for choosing actions) based on the current Markov state is just as good as the best policy for choosing actions based on a complete histories of states
+
+  
+ - 
