@@ -64,3 +64,14 @@
    - Formally, if the state signal has the Markov Property, then the environment response at t+1 depends only on the state and action representations at t
    - If an environment has Markov property, then the one step dynamics enables us to predict the next state and expected next reward given the current state and action
    - The actions taken (i.e. the best policy for choosing actions) based on the current Markov state is just as good as the best policy for choosing actions based on a complete histories of states
+
+- Markov Decision Process (MDP)
+  - 
+  
+- Value Function (MDP)
+  - Function of a state estimating how good it is to be in that state i.e. in terms of what is the expected reward being in a given state.
+  - Thus value function Vpi(s) = E(Gt|St=s) i.e. the expected return to be in a particular state. This is called the state value function for policy pi.
+  - Similarly, Qpi(s,a) aka action value function for policy pi is the expected return starting from s,taking the action a, and thereafter following the policy pi. In other words, if I am in a stage, I take some action a, get some immediate reward - what would be the action value from the new state onwards. Qpi (s) = Epi [ Rt+1 +y Vpi (st+1) |St = s, At = a ]
+  - Bellman Expectation Equation: The state value function can be decomposed into immediate reward + discounted value of the successor state. In other words, what happens on one step of following a policy and how much more reward we can get if I continue that policy from the new state. Vpi (s) = Epi [ Rt+1 +y Vpi (st+1) |St = s ]
+  - 
+  
