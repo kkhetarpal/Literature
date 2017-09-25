@@ -64,9 +64,6 @@
    - Formally, if the state signal has the Markov Property, then the environment response at t+1 depends only on the state and action representations at t
    - If an environment has Markov property, then the one step dynamics enables us to predict the next state and expected next reward given the current state and action
    - The actions taken (i.e. the best policy for choosing actions) based on the current Markov state is just as good as the best policy for choosing actions based on a complete histories of states
-
-- Markov Decision Process (MDP)
-  - 
   
 - Value Function (MDP)
   - Function of a state estimating how good it is to be in that state i.e. in terms of what is the expected reward being in a given state.
