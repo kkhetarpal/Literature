@@ -1,4 +1,13 @@
-# Literature
+# Reinforcement Learning - Literature
+Repository of my reading lists, selected paper summaries, and corresponding links
+
+* On ensuring that machines are well behaved [[Paper]](https://arxiv.org/pdf/1708.05448.pdf)
+  * Philip S. Thomas, Bruno Castro da Silva, Andrew G. Barto, and Emma Brunskill
+* Safe Exploration in Markov Decision Processes [[Paper]](https://people.eecs.berkeley.edu/~pabbeel/papers/MoldovanAbbeel_ICML2012full-rev2.pdf)
+  * Teodor Mihai Moldovan, Pieter Abbeel, ICML, 2012
+
+
+# Vision | NLP - Literature
 Repository of my reading lists, paper summaries, and corresponding links
 
 2016
