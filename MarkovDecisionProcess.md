@@ -70,3 +70,8 @@
   - Thus value function Vpi(s) = E(Gt|St=s) i.e. the expected return to be in a particular state. This is called the state value function for policy pi.
   - Similarly, Qpi(s,a) aka action value function for policy pi is the expected return starting from s,taking the action a, and thereafter following the policy pi. In other words, if I am in a stage, I take some action a, get some immediate reward - what would be the action value from the new state onwards. Qpi (s) = Epi [ Rt+1 +y Vpi (st+1) |St = s, At = a ]
   - Bellman Expectation Equation: The state value function can be decomposed into immediate reward + discounted value of the successor state. In other words, what happens on one step of following a policy and how much more reward we can get if I continue that policy from the new state. Vpi (s) = Epi [ Rt+1 +y Vpi (st+1) |St = s ]
+
+- Optimal Value Functions
+  - A policy pi is better than or equal to another policy pi' if it's expected return is greater than or equal to that of pi' for all states. There is always atleast ONE policy better than or equal to all other policies. This is known as the optimal policy.
+  - There may be more than 1 optimal policy, They are all denoted by pi' as they share the same state value function called the 'optimal state-value function'. They also share the same action-value function called the 'optimal action-value function'.
+  
