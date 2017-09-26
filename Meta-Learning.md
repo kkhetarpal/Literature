@@ -10,6 +10,10 @@ However, the same is not at all true for human brain. We are able to identify a 
 
 This also translates to the ability of humans to perform across tasks. If I am familiar with the Texas-Holdem version of poker, I can quickly adapt to five-card draw poker. I might be able to perform well in similar other card games as well without having to be 'trained' all over from scratch. Traditional AI systems today lack such adaptation across skills.
 
-**What is meta-learning**
+**What is meta-learning?**
 
-The ability to learn *how to learn* new tasks faster by reusing previous experience is called meta-learning. [John Biggs](http://onlinelibrary.wiley.com/doi/10.1111/j.2044-8279.1985.tb02625.x/abstract) defined meta-learning as the *state of being aware of and taking control of one's own learning* 
+The ability to learn *how to learn* new tasks faster by reusing previous experience is called meta-learning. [John Biggs](http://onlinelibrary.wiley.com/doi/10.1111/j.2044-8279.1985.tb02625.x/abstract) defined meta-learning as the *state of being aware of and taking control of one's own learning*. 
+
+**Related work**
+
+
