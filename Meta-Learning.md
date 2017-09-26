@@ -16,4 +16,5 @@ The ability to learn *how to learn* new tasks faster by reusing previous experie
 
 **Related work**
 
+Although the concept of meta-learning dates back to late 1980s, it has gained a lot more attention in recent years. A lot of work has focused on learning the learning rule. I will start with my attempt to understand and explain the recent work of Chelsea Finn and colleagues at BAIR titled [*model-agnostic meta-learning*](https://arxiv.org/abs/1703.03400).
 
