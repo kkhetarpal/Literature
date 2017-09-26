@@ -12,7 +12,7 @@ This also translates to the ability of humans to perform across tasks. If I am f
 
 **What is meta-learning?**
 
-The ability to learn *how to learn* new tasks faster by reusing previous experience is called meta-learning. [John Biggs](http://onlinelibrary.wiley.com/doi/10.1111/j.2044-8279.1985.tb02625.x/abstract) defined meta-learning as the *state of being aware of and taking control of one's own learning*. 
+The ability to learn *how to learn* new tasks faster by reusing previous experience is called meta-learning. [John Biggs](http://onlinelibrary.wiley.com/doi/10.1111/j.2044-8279.1985.tb02625.x/abstract) defined meta-learning as the *state of being aware of and taking control of one's own learning*.  'The goal of meta-learning is to train a model on a variety of learning tasks, such that it can solve new learning tasks using only a small number of training samples.'
 
 **Related work**
 
