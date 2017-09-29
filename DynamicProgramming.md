@@ -9,12 +9,8 @@
   * Subproblems recur many times such that sub solutions can be cached and reused aka dive and conquer approach
   * MDPs satisfy both these properties - Bellman equation gives us this recursive decomposition
   The value function tells us the optimal way to behave. It can be thought of as a cache holding
-  information which can be used at any point in time.
-  
- - DP assumes full knowledge of MDP
-  * Used for planning and prediction
-  * For prediction: Input: MDP or MRP, Output: the value function
-  * For control: Input: MDP, Output: Optimal value function & optimal policy
+  information which can be used at any point in time. DP assumes full knowledge of MDP
+  * Used for planning and prediction. For prediction: Input: MDP or MRP, Output: the value function. For control: Input: MDP,   Output: Optimal value function & optimal policy
   
 **Applications of Dynamic Programming**
 -Scheduling algorithms
