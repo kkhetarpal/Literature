@@ -27,10 +27,21 @@ Scheduling algorithms, String algorithms, Graph algorithms, Bioinformatics
 
 
 **What is Policy Iteration?**
-- Problem: How do we make a policy pi better?
+- Problem: How do we make a policy pi better? 
 - Solution: Two step solution:
   * Evaluate the policy pi by the value function
   * Improve the policy by acting greedily with respect to value function
-  * This process of policy iteration **always** converges to pi*
+- This process of policy iteration **always** converges to pi*
+- Evaluation and Improvement will go hand in hand 
+
+**What happens when we act greedy**
+- 
+
+
+
   
+  
+**Optimality**
+- A policy pi(a|s) achieves the optimal value from the state s, vpi(s) = vpi*(s) if and only if
+  * For any state s' reachable from s, pi achieves the optimal value from state s'. vpi(s') = v*(s')
   
