@@ -35,11 +35,11 @@ Scheduling algorithms, String algorithms, Graph algorithms, Bioinformatics
 - Evaluation and Improvement will go hand in hand 
 
 **What happens when we act greedy**
-- 
+- acting greedily reflects the action we would have taken if we acted greedily. In some sense refers to the value function helping us figure out better policy
+  * Policy improvement can be achieved by acting greedily. In other words, If we take an action a with a better policy pi', then follow pi thereafter, our value function increases
+  * In a nutshell, if we pick the greedy policy the total amount of reward we get by acting greedily is atleast as much as the value before we started acting greedily. 
+  * Once improvement of the value function stope, the Bellman optimality equation has been satisified.
 
-
-
-  
   
 **Optimality**
 - A policy pi(a|s) achieves the optimal value from the state s, vpi(s) = vpi*(s) if and only if
@@ -59,5 +59,9 @@ Scheduling algorithms, String algorithms, Graph algorithms, Bioinformatics
 - Combines the step of evaluating a policy and acting greedily
 
 
-
-  
+**Drawbacks of Dynamic Programming?**
+- DP uses full-width backups i.e. considers all possible actions and all possible states. In order to do so, we need to know all possible scenarios aka knowledge of the MDP.
+- Instead, we could sample backups
+  * This leads to a *model free* approach which does not require any knowledge of the MDP
+  * breaks the curse of dimensionality 
+  * and the cost of the backups is constant and independent of the n = |S|
