@@ -33,7 +33,22 @@ Scheduling algorithms, String algorithms, Graph algorithms, Bioinformatics
   * Consider a determinstic policy a = \pi(s),
   * We can improve this policy by acting greedily and executing \pi'(s) = argmax_{a E A} q_{\pi} (s,a)
   q_{pi} (s,pi'(s)) >=  v_{pi}(s)
-  
+  * Then the policy pi' must be as good as, or better than pi. Since it maximizes over all actions and thus has to be greater than one q,
+  * Idea behind the proof of policy improvement: Taking a greedy policy for one step is better than what we started with 
+    V_{pi} <= q_{pi} (s, pi'(s))
+           <= E_{pi'}[ Rt+1 + yV_{pi}(st+1) |St = s]
+           <= E_{pi'}[ Rt+1 + y q_{pi}(st+1,pi'(st+1)) |St = s]
+           <= E_{pi'}[ Rt+1 + y E_{pi'}[ Rt+2 + yV_{pi}(st+2) | St = s]
+           <= E_{pi'}[ Rt+1 + yRt+2 + y^2(Rt+3) + .... |St = s]
+           = V_{pi'}(s)
+   * The process of making a new policy that improves on an original policy, by making it greedy with respect to the value function of the original policy, is called policy improvement.
+           
+ 
+**What happens when we act greedy**
+- acting greedily reflects the action we would have taken if we acted greedily. In some sense refers to the value function helping us figure out better policy
+  * Policy improvement can be achieved by acting greedily. In other words, If we take an action a with a better policy pi', then follow pi thereafter, our value function increases
+  * In a nutshell, if we pick the greedy policy the total amount of reward we get by acting greedily is atleast as much as the value before we started acting greedily. 
+  * Once improvement of the value function stope, the Bellman optimality equation has been satisified. 
 
 
 **What is Policy Iteration?**
@@ -43,12 +58,6 @@ Scheduling algorithms, String algorithms, Graph algorithms, Bioinformatics
   * Improve the policy by acting greedily with respect to value function
 - This process of policy iteration **always** converges to pi*
 - Evaluation and Improvement will go hand in hand 
-
-**What happens when we act greedy**
-- acting greedily reflects the action we would have taken if we acted greedily. In some sense refers to the value function helping us figure out better policy
-  * Policy improvement can be achieved by acting greedily. In other words, If we take an action a with a better policy pi', then follow pi thereafter, our value function increases
-  * In a nutshell, if we pick the greedy policy the total amount of reward we get by acting greedily is atleast as much as the value before we started acting greedily. 
-  * Once improvement of the value function stope, the Bellman optimality equation has been satisified.
 
   
 **Optimality**
