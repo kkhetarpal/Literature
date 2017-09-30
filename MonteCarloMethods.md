@@ -9,6 +9,6 @@
 - It is well suited for episodic tasks only wherein the value function = mean return of the episodes. Look up sample returns and average over them. 
 
 **Monte-Carlo Policy Evaluation**
-- Goal: learn value function v_{$\pi$} from episodes of experiences i.e. S1, A1, R1, S2, A2, R2, ... Sk ~ pi
+- Goal: learn value function v_{$$\pi$$} from episodes of experiences i.e. S1, A1, R1, S2, A2, R2, ... Sk ~ pi
   
 **Applications of Dynamic Programming**
