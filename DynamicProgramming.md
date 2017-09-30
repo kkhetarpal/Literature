@@ -78,9 +78,14 @@ Scheduling algorithms, String algorithms, Graph algorithms, Bioinformatics
 - Combines the step of evaluating a policy and acting greedily
 
 
-**Drawbacks of Dynamic Programming?**
+**Drawbacks of Dynamic Programming - Alternate Methods**
 - DP uses full-width backups i.e. considers all possible actions and all possible states. In order to do so, we need to know all possible scenarios aka knowledge of the MDP.
 - Instead, we could sample backups
   * This leads to a *model free* approach which does not require any knowledge of the MDP
   * breaks the curse of dimensionality 
   * and the cost of the backups is constant and independent of the n = |S|
+- Asynchronous DP algorithms on the other hand provide in-place iterative DP algorithms, wherein
+  * Back up the values of the states in any order
+  * Provide greater flexibility in selecting states to which back up operations are applied
+  * This provides advantage by selecting states to which we apply bakups so as to improve the algorithms's rate of progress
+  * Real time DP can be made to run at the same time when an agent interacts with the environment, making it possible to focus on the states that are most relevant to the agent.
