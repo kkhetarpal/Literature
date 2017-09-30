@@ -16,7 +16,6 @@
 **Applications of Dynamic Programming**
 Scheduling algorithms, String algorithms, Graph algorithms, Bioinformatics
 
-
 **What is Policy Evaluation?**
 - Problem: How do we evaluate a policy pi ? In other words, how do we compute the state-value functioon for an arbitrary policy pi
 - Solution: Iterative application of Bellman expectation back up : the way we do this is synchronous backups i.e. every single state is updated at each time step (known as full-width backups). We iterate and process converges eventually.
