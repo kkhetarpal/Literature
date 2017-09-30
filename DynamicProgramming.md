@@ -89,3 +89,9 @@ Scheduling algorithms, String algorithms, Graph algorithms, Bioinformatics
   * Provide greater flexibility in selecting states to which back up operations are applied
   * This provides advantage by selecting states to which we apply bakups so as to improve the algorithms's rate of progress
   * Real time DP can be made to run at the same time when an agent interacts with the environment, making it possible to focus on the states that are most relevant to the agent.
+
+
+**Generalized Policy Iteration (GPI)?**
+- refers to the idea of interaction between policy evaluation and policy improvement irrespective of the granularity of the two processes,
+- In an RL setting, a policy is always being improved with respect to a value function and a value function is being driven towards the value function for the policy. Both these process trying to stabilize,
+- The value function stabilizes only when it is consistent with the current policy, and, the policy stabilizes only when it is greedy with respect to the current value function. This implies that the Bellman optimality equation holds and that thus suggesting that the policy and value function are optimal.
