@@ -32,7 +32,7 @@ Scheduling algorithms, String algorithms, Graph algorithms, Bioinformatics
 - Once we have evaluated a policy, we know how good it is to follow the current policy from s- that is vpi(s)- but would it be better or worse to change to a new policy?
   * Consider a determinstic policy a = \pi(s),
   * We can improve this policy by acting greedily and executing \pi'(s) = argmax_{a E A} q_{\pi} (s,a)
-  
+  q_{pi} (s,pi'(s)) >=  v_{pi}(s)
   
 
 
