@@ -45,3 +45,15 @@ Scheduling algorithms, String algorithms, Graph algorithms, Bioinformatics
 - A policy pi(a|s) achieves the optimal value from the state s, vpi(s) = vpi*(s) if and only if
   * For any state s' reachable from s, pi achieves the optimal value from state s'. vpi(s') = v*(s')
   
+  
+**What is Value Iteration?**
+- Problem: Find optimal policy pi? 
+- Solution: Iterative application of Bellman optimality backup
+- Value Iteration goes directly from value function to value function and does not deal with a particular policy
+  * Start off with an arbitrary value
+  * At each iteration k+1, 
+  * For all states s E S; Update the Vk+1(s) from Vk(s')
+  * Here, there is no explicit policy, each update may correspond to any policy
+- This process is exactly equal to the modified policy iteration with k = 1
+
+  
