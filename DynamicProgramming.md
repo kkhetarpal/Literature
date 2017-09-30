@@ -27,6 +27,15 @@ Scheduling algorithms, String algorithms, Graph algorithms, Bioinformatics
 - In summary, iterate the bellman equation, feed the value into itself, use the one step look aheads.
 - We could also stop much before convergence by putting a stopping criterion such as the absolute difference in value functions between two successive states being sufficiently small. 
 
+
+**What is Policy Improvement?**
+- Once we have evaluated a policy, we know how good it is to follow the current policy from s- that is vpi(s)- but would it be better or worse to change to a new policy?
+  * Consider a determinstic policy a = \pi(s),
+  * We can improve this policy by acting greedily and executing \pi'(s) = argmax_{a E A} q_{\pi} (s,a)
+  
+  
+
+
 **What is Policy Iteration?**
 - Problem: How do we make a policy pi better? 
 - Solution: Two step solution:
