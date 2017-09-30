@@ -54,9 +54,9 @@ Scheduling algorithms, String algorithms, Graph algorithms, Bioinformatics
 **What is Policy Iteration?**
 - Problem: How do we make a policy pi better? 
 - Solution: Two step solution:
-  * Evaluate the policy pi by the value function
-  * Improve the policy by acting greedily with respect to value function
-- This process of policy iteration **always** converges to pi*
+  * Evaluate the policy pi by the value function [policy evaluation]
+  * Improve the policy by acting greedily with respect to value function [policy improvement]
+- Since a finite MDP has only a finite number of policies, this process of policy iteration **always** converges to an optimal policy pi* and an optimal value function v* in a finite number of iterations
 - Evaluation and Improvement will go hand in hand 
 
   
