@@ -55,5 +55,9 @@ Scheduling algorithms, String algorithms, Graph algorithms, Bioinformatics
   * For all states s E S; Update the Vk+1(s) from Vk(s')
   * Here, there is no explicit policy, each update may correspond to any policy
 - This process is exactly equal to the modified policy iteration with k = 1
+- The intermediate v that we get may not be equivalent to any policy at all, i.e. may be completely unachievable with any policy
+- Combines the step of evaluating a policy and acting greedily
+
+
 
   
