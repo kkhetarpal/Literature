@@ -4,7 +4,7 @@
 ## Chapter 5 - Monte Carlo Methods by Rich Sutton, Lecture 4 - Model Free Prediction by David Silver 
 
 **What is Model Free Prediction or Monte Carlo Methods?**
-- The idea of MC methods is to learn directly from the episode of experience i.e. learn from complete episodes which involves no bootsrapping. 
+- The idea of MC methods is to learn directly from the episodes of experiences i.e. learn from complete episodes which involves no bootsrapping. 
 - MC methods are model-free i.e. no knowledge of MDP transitions or rewards is given
 - It is well suited for episodic tasks only wherein the value function = mean return of the episodes. Look up sample returns and average over them. 
 
