@@ -23,3 +23,22 @@ When actions whose estimated value is greatest are chosen, such actions are call
 Exploitation would yeild known higher expected reward in one-step, however, exploration is important to know which actions to *exploit*. If time is limited, exploration may yield lower return. But in the long run it would be higher since exploration allows discovery of better actions which later can be thus exploited. This naturally leads to a *conflict* for an agent to explore or exploit.
 
 Here we shall discuss simple balancing methods for the k-armed bandit problem that show they work much better than methods that always exploit.
+
+
+**Action-Value Methods**
+Estimating value of an action is equivalent to the mean reward when the action is selected. This can be estimated by averaging the rewards actually receieved: 
+
+Qt(a) = [ Sum of rewards when a taken prior to t/ number of times a taken prior prior to t]
+      = [ Summation from i =1 .. t-1 Ri. 1(Ai =a) / Summation from i =1 to t-1 1(Ai =a)]
+      = Sample average methods for estimating rewards 
+      = average of the sample of relevant rewards
+
+
+**Action Selection Methods*
+
+*Greedy action selection method* 
+  * Selecting the action with the highest estimated action value At = argmax a [ Qt(a) ]
+  * Exploits current knowledge, maximizes immediate reward; spends no time at all sampling from inferiro actions to *explore*
+*e-greedy methods* 
+  * Behave greedily most of the time, but every once in a while say with a probability e, instead select randomly from amongst all actions with equal probability
+  * Every action gets sampled an infinite number of times, thus ensuring that all the Qt(a) converge to q*(a)
