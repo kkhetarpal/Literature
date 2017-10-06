@@ -34,7 +34,7 @@ Qt(a) = [ Sum of rewards when a taken prior to t/ number of times a taken prior 
       = average of the sample of relevant rewards
 
 
-**Action Selection Methods*
+*Action Selection Methods*
 
 *Greedy action selection method* 
   * Selecting the action with the highest estimated action value At = argmax a [ Qt(a) ]
