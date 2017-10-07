@@ -48,7 +48,7 @@ Qt(a) = [ Sum of rewards when a taken prior to t/ number of times a taken prior 
   * The greedy method improved faster than the other methods at the beginning but then levelled off at a lower level
   * The greedy method performs worse in the long run as it is stuck performing sub-optimal actions 
   * On the contrary, the e-greedy methods eventually perform better because they continue to explore and increase chances of discovering the optimal action.
-  * Between e=0.1 and e=0.01, the latter method improves more slowly but eventually would perform better than the former - Intuition: Indicates that knowing what is best should be exploited but exploration with a balance is more rewardful over a longer time duration.
+  * Between e=0.1 and e=0.01, the latter method improves more slowly but eventually would perform better than the former - Intuition: Indicates that knowing what is best should be exploited but exploration with a balance is more rewardful over a longer time duration. e=0.01 would explore less and exploit more once it has found the action with most optimal reward.
   
 **Noise in Reward with greedy/e-greedy methods**
   * If the reward is noisier, more exploration is needed to find the optimal action, whereas, if the reward is pure then the greedy method would know the true value of each action after trying it once.
