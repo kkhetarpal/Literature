@@ -39,6 +39,18 @@ Qt(a) = [ Sum of rewards when a taken prior to t/ number of times a taken prior 
 *Greedy action selection method* 
   * Selecting the action with the highest estimated action value At = argmax a [ Qt(a) ]
   * Exploits current knowledge, maximizes immediate reward; spends no time at all sampling from inferiro actions to *explore*
-*e-greedy methods* 
+
+*E-greedy methods* 
   * Behave greedily most of the time, but every once in a while say with a probability e, instead select randomly from amongst all actions with equal probability
   * Every action gets sampled an infinite number of times, thus ensuring that all the Qt(a) converge to q*(a)
+
+**Takeaways from the 10-Armed Testbed**
+  * The greedy method improved faster than the other methods at the beginning but then levelled off at a lower level
+  * The greedy method performs worse in the long run as it is stuck performing sub-optimal actions 
+  * On the contrary, the e-greedy methods eventually perform better because they continue to explore and increase chances of discovering the optimal action.
+  * Between e=0.1 and e=0.01, the latter method improves more slowly but eventually would perform better than the former - Intuition: Indicates that knowing what is best should be exploited but exploration with a balance is more rewardful over a longer time duration.
+  
+**Noise in Reward with greedy/e-greedy methods**
+  * If the reward is noisier, more exploration is needed to find the optimal action, whereas, if the reward is pure then the greedy method would know the true value of each action after trying it once.
+  * However, even in most deterministic cases, exploration is needed to overcome dynamic rewards and actions changing over time. For instance, a non-greedy action becoming a greedy action later in time. 
+
