@@ -1,7 +1,7 @@
 # Multi-Arm Bandits
 ## Summary Notes
 
-## Chapter 2 - Rich Sutton
+## Chapter 2 - Multi-Arm Bandits - Rich Sutton
 
 **High Level Idea**
 Rl uses the training data and evaluates the actions taken rather than instructing what action must be taken, resulting in active exploration. Feedback can be purely evaluative indicating how good an action is (as opposed to telling what the best/worst action is) as is the case with RL. 
@@ -54,3 +54,7 @@ Qt(a) = [ Sum of rewards when a taken prior to t/ number of times a taken prior 
   * If the reward is noisier, more exploration is needed to find the optimal action, whereas, if the reward is pure then the greedy method would know the true value of each action after trying it once.
   * However, even in most deterministic cases, exploration is needed to overcome dynamic rewards and actions changing over time. For instance, a non-greedy action becoming a greedy action later in time. 
 
+**Computing Action-Value Methods**
+  * Significant for a highly complex RL problem to be solved efficiently with constant memory and per-time-step computation. For an action that has been selected n-1 times, the estimate of its action value [Qn]  is the average of all sample rewards until then. However, this would require to store all rewards and consume more memory
+  * Given an estimate up until a point in time n, we can also update the action value of an action incrementally as we come across more number of times that action is selected. The new average of all n rewards can be computed by
+  Qn+1 = Qn + 1/n (Rn - Qn). This requires for us to store only Qn and n apart from computing each new reward.
