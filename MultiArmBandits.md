@@ -60,3 +60,14 @@ Qt(a) = [ Sum of rewards when a taken prior to t/ number of times a taken prior 
   Qn+1 = Qn + 1/n (Rn - Qn). This requires for us to store only Qn and n apart from computing each new reward.
 * Using incremental implementation, we get New Estimate -> Old Estimate + Stepsize [Target - OldEstimate]
 * Nonstationary Bandits: weight recent rewards more heavily than long-past ones. This can be done by using a constant step size parameter. Using a weighted average where the weight, [alpha * (1-alpha)^(n-1)] given to the reward Ri depends on how mnay rewards ago, n-i, was observed. The weight decays exponentially according to the exponent on 1-alpha. (If 1 - alpha = 0, then all the weight goes on the very last reward, Rn, because of the convention that 0^0 = 1.) Accordingly, this is sometimes called an exponential, recency-weighted average.
+
+**Initial Values Good or Bad ?**
+  * Until now the methods for action-value estimates depend on initial estimate Q1(a). 
+  * Cons: 
+      * introduces a bias
+      * needs to be picked by the user
+      * not well suited to non-statinary problems as the drive for exploration there is inherently temporary
+  * Pros: 
+      * brings an advantage of feeding in some prior knowledge.
+      * could be used to encourage exploration by giving *optimistic initial values* which force the agent to explore actions not taken and learn optimal than sub-optimal actions
+      
