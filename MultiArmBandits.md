@@ -72,7 +72,11 @@ Qt(a) = [ Sum of rewards when a taken prior to t/ number of times a taken prior 
       * brings an advantage of feeding in some prior knowledge.
       * could be used to encourage exploration by giving *optimistic initial values* which force the agent to explore actions not taken and learn optimal than sub-optimal actions
       
-**Upper-confidence-bound action selection ?**
+**Upper-confidence-bound action selection**
   * Problem: While greedy action selection only selects based on what looks best at present, e-greedy action selection forces non-greedy actions to be tried with no preference or a measure of nearly greedy or uncertainity in actions.
   * Solution: Select among the non-greedy actions based on their potential for actually being optimal. Taking into account how close their estimates are to being maximal and how much is uncertainity in those estimates.
   Upper confidence bound (UCB) takes into account a measure of uncertainity or variance in estimate of action a's value.
+
+**Gradient Bandit Algorithms**
+  * Consider learning a *numerical preference Ht(a)* for each action a. The larger the preference, the more often that action is taken. Action probabilities are determined according to a soft-max distribution.
+  * Based on Stochastic Gradient Ascent, on each time step, after an action At is selected, the preferences are updated using 2.10 in the book. The reward is compared with a baseline reward and accrordingly the probability is updated.
