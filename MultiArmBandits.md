@@ -38,7 +38,7 @@ Qt(a) = [ Sum of rewards when a taken prior to t/ number of times a taken prior 
 
 *Greedy action selection method* 
   * Selecting the action with the highest estimated action value At = argmax a [ Qt(a) ]
-  * Exploits current knowledge, maximizes immediate reward; spends no time at all sampling from inferiro actions to *explore*
+  * Exploits current knowledge, maximizes immediate reward; spends no time at all sampling from inferior actions to *explore*
 
 *E-greedy methods* 
   * Behave greedily most of the time, but every once in a while say with a probability e, instead select randomly from amongst all actions with equal probability
@@ -60,6 +60,7 @@ Qt(a) = [ Sum of rewards when a taken prior to t/ number of times a taken prior 
   Qn+1 = Qn + 1/n (Rn - Qn). This requires for us to store only Qn and n apart from computing each new reward.
 * Using incremental implementation, we get New Estimate -> Old Estimate + Stepsize [Target - OldEstimate]
 * Nonstationary Bandits: weight recent rewards more heavily than long-past ones. This can be done by using a constant step size parameter. Using a weighted average where the weight, [alpha * (1-alpha)^(n-1)] given to the reward Ri depends on how mnay rewards ago, n-i, was observed. The weight decays exponentially according to the exponent on 1-alpha. (If 1 - alpha = 0, then all the weight goes on the very last reward, Rn, because of the convention that 0^0 = 1.) Accordingly, this is sometimes called an exponential, recency-weighted average.
+* When alpha = 1/n, by law of large numbers the sample-average method is guaranteed to converge which is not the case when alpha is a constant. 
 
 **Initial Values Good or Bad ?**
   * Until now the methods for action-value estimates depend on initial estimate Q1(a). 
@@ -71,3 +72,4 @@ Qt(a) = [ Sum of rewards when a taken prior to t/ number of times a taken prior 
       * brings an advantage of feeding in some prior knowledge.
       * could be used to encourage exploration by giving *optimistic initial values* which force the agent to explore actions not taken and learn optimal than sub-optimal actions
       
+
