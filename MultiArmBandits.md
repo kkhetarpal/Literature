@@ -80,3 +80,12 @@ Qt(a) = [ Sum of rewards when a taken prior to t/ number of times a taken prior 
 **Gradient Bandit Algorithms**
   * Consider learning a *numerical preference Ht(a)* for each action a. The larger the preference, the more often that action is taken. Action probabilities are determined according to a soft-max distribution.
   * Based on Stochastic Gradient Ascent, on each time step, after an action At is selected, the preferences are updated using 2.10 in the book. The reward is compared with a baseline reward and accrordingly the probability is updated.
+  * The authors give a very detailed intuition on how GBA relates to SGA. To Do.
+
+**Summary**
+  * Discusses several ways of balancing exploration and exploitation.
+    * greedy methods 
+    * e-greedy methods [choose randomly a small fraction of time]
+    * UCB methods [choose deterministically but achieve exploration by subtly favorind at each step the actions that have receieved fewer samples]
+    * Gradient-Bandit Algorithms [estimate action preferences and not values and favor the most preferred actions in a graded probabilistic manner using a soft max distribution]
+ 
