@@ -7,6 +7,15 @@
 - The idea of MC methods is to learn directly from the episodes of experiences i.e. learn from complete episodes which involves no bootsrapping. 
 - MC methods are model-free i.e. no knowledge of MDP transitions or rewards is given
 - It is well suited for episodic tasks only wherein the value function = mean return of the episodes. Look up sample returns and average over them. 
+- Experience is divided over episodes, and all espisodes eventually terminate.
+- MC methods can thus be incremental in an episode-by-episode sense, but not in a step-by-step (online) sense.
+- Follow the GPI framework wherein first we consider the prediction problem and then the policy improvmement, and finally the control problem and its solution by GPI.
+
+**Monte Carlo vs DP**
+- The estimate for one state does not build upon the estimate of any other state as is the case with DP.
+- In context of the backup diagrams, MC diagram shows only those samples on the one episode, DP digram shows all possible transitions
+- MC diagarams goes all the way to the end of an episode whereas DP diagram include only one-step transition
+- [MC over DP ?] MC has the ability to learn over actual experience, from simulated experience, and is computationally inexpensive as it can be used to estimate the value of a single state irrespective of the other states
 
 **Monte-Carlo Policy Evaluation**
 - **Goal**: learn value function v_{\pi} from episodes of experiences i.e. S1, A1, R1, S2, A2, R2, ... Sk ~ pi
@@ -21,7 +30,7 @@
   * Increment total return over many episodes S(s) <- S(s) + Gt
   * Value is estimated by mean return V(s) = S(s) / N(s)
   * By law of large numbers, as N(s) -> infinity, the value converges to the true value function of our policy as we get more and more samples
-  * We want to make sure that every state in the trajectory is visited for states we care about to ahve a sufficiently large N for this to work. By following the policy pi we guarantee that we see enough visits to states.
+  * We want to make sure that every state in the trajectory is visited for states we care about to have a sufficiently large N for this to work. By following the policy pi we guarantee that we see enough visits to states.
  
 - **Every-Visit Monte-Carlo Policy Evaluation**
   * To evaluate a state s, 
@@ -31,9 +40,7 @@
   * Value is estimated by mean return V(s) = S(s) / N(s)
   * By law of large numbers, as N(s) -> infinity, the value converges to the true value function
   
- - **BlackJack Example**
- 
- 
+
  
  
  
