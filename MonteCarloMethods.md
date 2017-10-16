@@ -41,11 +41,19 @@
   * By law of large numbers, as N(s) -> infinity, the value converges to the true value function
   
 **Monte-Carlo Estimation of Action Values**
+- **Goal**: to estimate q_pi(s,a), the expected return when starting in a state s, taking action a and thereafter following policy pi.
+
+A state action pair s,a is said to be visited in an episode if ever the state is visited and action a is taken in it.
+ 
  * Every-visit MC methods: estimates the value of a state-action pair as the average of the reutrns that have followed all visits to it.
   * First-visit MC methods: averages the returns following the first time in each episode that the state was visited and the action was selected.
   
   Considering the policy being followed pi is determinstic, one will observe returns only for one of the actions from each state. This results in the MC estimates of other actions not improving with experience. This problem is called **maintiaing exploration**. We must ensure continual exploration. We could specify that the episodes start in a state-action pair, and that every pair has a nonzero probability of being selected as the start. This assumption is known as **exploring starts**.
 Alternatively, by **considering only policies that are stochastic with a nonzero probability of selecting all actions in each states** also guarantees infinite visits to each state-action pair.
  
- **Monte-Carlo Control**
- 
+**Monte-Carlo Control**
+ * Goal is to approximate optimal policies
+ * Consider a MC version of classical policy iteration. This process involves alternating complete steps of policy evaluation and policy improvement, beginning with an arbitrary policy pi0 and ending with the optimal policy and optimal action-value function.
+   * Policy evaluation is done as decribed above. Assuming we do indeed observe infinite number of episodes, and that these episodes are generated with exploring starts. MC methods will computer q_pi_k for arbitrary pi_k
+   * Policy improvement is done by making the policy greedy w.r.t the current value function. For any action-value function q, the corresponding greedy policy is the one that, for each s E S, deterministically chooses an action with maximal action-value: pi(s) = argmax a( q(s,a) ). 
+   * PI can then be done by constructing each pi_k+1 with respect to q_pi_k. The policy improvement theorem assures that the pi_k+1 os uniformily better than pi_k or just as good as pi_k. This assures the process converges to optimal policy and value function.
