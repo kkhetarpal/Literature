@@ -40,7 +40,12 @@
   * Value is estimated by mean return V(s) = S(s) / N(s)
   * By law of large numbers, as N(s) -> infinity, the value converges to the true value function
   
-
+**Monte-Carlo Estimation of Action Values**
+ * Every-visit MC methods: estimates the value of a state-action pair as the average of the reutrns that have followed all visits to it.
+  * First-visit MC methods: averages the returns following the first time in each episode that the state was visited and the action was selected.
+  
+  Considering the policy being followed pi is determinstic, one will observe returns only for one of the actions from each state. This results in the MC estimates of other actions not improving with experience. This problem is called **maintiaing exploration**. We must ensure continual exploration. We could specify that the episodes start in a state-action pair, and that every pair has a nonzero probability of being selected as the start. This assumption is known as **exploring starts**.
+Alternatively, by **considering only policies that are stochastic with a nonzero probability of selecting all actions in each states** also guarantees infinite visits to each state-action pair.
  
  
  
