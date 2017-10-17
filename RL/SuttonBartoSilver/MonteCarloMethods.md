@@ -42,7 +42,12 @@
   
 **High level takeAway from the Blackjack Example**
 Consdier following a policy of sticking if the sum of the cards >= 20 otherwise twist. We get a decent estimate of states after 10,000 episodes. As one would expect if you have got 20-21 you do very well in this game. This results just by sampling. No one told us the return, we see the expected return i.e. the estimated value function just by sampling. 
-   
+
+
+**Incremental Updates**
+ * Mean of a sequence x1, x2.... can be computed incrementally by using the formulae: `New Mean = Old Mean + StepSize (Target Value - Old Estimate)`
+
+
 **Monte-Carlo Estimation of Action Values**
 - **Goal**: to estimate q_pi(s,a), the expected return when starting in a state s, taking action a and thereafter following policy pi.
 
