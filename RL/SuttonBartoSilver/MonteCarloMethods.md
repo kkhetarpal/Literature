@@ -52,7 +52,7 @@ Consdier following a policy of sticking if the sum of the cards >= 20 otherwise 
    * For each state St with return Gt;
       * `N(St) <- N(St) + 1`
       * `V(St) = V(St) + 1/N(St) (Gt - V(St))` \\ incrementally updating mean episode by episode
-* When we do not want to remember everything that happened way long back, we can use a constant step-size which guves us a exponential forgetting rate.
+* For non-stationary problems and memoryless algorithms; When we do not want to remember everything that happened way long back, we can use a constant step-size which guves us a exponential forgetting rate.
       * `V(St) = V(St) + alpha (St) (Gt - V(St))` 
 
 **Monte-Carlo Estimation of Action Values**
