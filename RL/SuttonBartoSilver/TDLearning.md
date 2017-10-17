@@ -15,4 +15,11 @@ In the case of incremental every-visit Monte-Carlo
 In the case of incremental every-visit Monte-Carlo
   * `V(St) <- V(St) + alpha (Estimated Return - V(St))` // update value of each state with estimated return
   * Here the estimated return is ` Rt+1 + yV(St+1) ` i.e. the immediate reward and the discounted value at the next time step
-  * `V(St) <- V(St) + alpha ((Rt+1 + yV(St+1)) - V(St))` where `TD Target = Rt+1 + yV(St+1)` and `TD Error = Rt+1 + yV(St+1) - V(St)` 
+  * `V(St) <- V(St) + alpha ((Rt+1 + yV(St+1)) - V(St))` where 
+  `TD Target = Rt+1 + yV(St+1)` and `TD Error = Rt+1 + yV(St+1) - V(St)` 
+  
+**Intuition for TD**
+
+Why is TD a good idea? In MC one needs to wait until the termination of an episode to update the value function, whereas in situations where one cannot take that leverage and needs to update the value function immediately as one has an estimate TD serves the right purpose. 
+
+Example of driving home and estimating the time to reach. In the scenario if the Markov Reward Process is solved using a MC method, we update the estimate of the value function only after we reach the final outcome. However we could update the estimate time to home every time some situation occurs there and then using the TD learning method.
