@@ -1,5 +1,5 @@
 [Lecture 1](https://www.youtube.com/watch?v=qaMdN6LS9rA) 
-Intro to MDPs and Exact Solution Methods
+Motivation + Overview + Exact Solution Methods
 
 - [x] What is an MDP 
   - Set of states S,
@@ -9,5 +9,10 @@ Intro to MDPs and Exact Solution Methods
   - Start state *s0*
   - Discount factor *y*
   - Horizon *H*
-- [ ] Success Stories from RL
-- [ ] RL Algorithms Landscape
+  - Policy 
+  - Goal 
+- [x] Success Stories from RL
+- [x] RL Algorithms Landscape
+- [x] Optimal Control 
+  Given an MDP (S,A,P,R,y,H) find the optimal policy the one that maximizes the expected reward
+  
