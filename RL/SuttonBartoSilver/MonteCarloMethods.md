@@ -18,7 +18,7 @@
 - [MC over DP ?] MC has the ability to learn over actual experience, from simulated experience, and is computationally inexpensive as it can be used to estimate the value of a single state irrespective of the other states
 
 **Monte-Carlo Policy Evaluation**
-- **Goal**: learn value function v_{\pi} from episodes of experiences i.e. S1, A1, R1, S2, A2, R2, ... Sk ~ pi
+- **Goal**: learn value function `v_{\pi}` from episodes of experiences i.e. `S1, A1, R1, S2, A2, R2, ... Sk ~ pi`
   * Look at the stream of experience and look at total discounted reward we got at each time step onwards until the end of the episode
   * The value function is nothing but the expected return `v_{\pi} = E[Gt | St=s]`
   * In MC policy evaluation uses *empirical mean return* instead of the expected return
@@ -26,18 +26,18 @@
 - **First-Visit Monte-Carlo Policy Evaluation**
   * To evaluate a state s, 
   * The first time step t that state s is visited in an episode
-  * Increment counter N(s) <- N(s) + 1 (over a set of episodes, how many times we visited a particular state)
-  * Increment total return over many episodes S(s) <- S(s) + Gt
-  * Value is estimated by mean return V(s) = S(s) / N(s)
+  * Increment counter `N(s) <- N(s) + 1` (over a set of episodes, how many times we visited a particular state)
+  * Increment total return over many episodes `S(s) <- S(s) + Gt`
+  * Value is estimated by mean return `V(s) = S(s) / N(s)`
   * By law of large numbers, as N(s) -> infinity, the value converges to the true value function of our policy as we get more and more samples
   * We want to make sure that every state in the trajectory is visited for states we care about to have a sufficiently large N for this to work. By following the policy pi we guarantee that we see enough visits to states.
  
 - **Every-Visit Monte-Carlo Policy Evaluation**
   * To evaluate a state s, 
   * Every time step t that state s is visited in an episode
-  * Increment counter N(s) <- N(s) + 1 (over a set of episodes, how many times we visited a particular state)
-  * Increment total return over many episodes S(s) <- S(s) + Gt
-  * Value is estimated by mean return V(s) = S(s) / N(s)
+  * Increment counter `N(s) <- N(s) + 1`(over a set of episodes, how many times we visited a particular state)
+  * Increment total return over many episodes `S(s) <- S(s) + Gt`
+  * Value is estimated by mean return `V(s) = S(s) / N(s)`
   * By law of large numbers, as N(s) -> infinity, the value converges to the true value function
   
 **High level takeAway from the Blackjack Example**
