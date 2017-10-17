@@ -10,3 +10,5 @@ Repository of RL reading lists, selected paper summaries, and corresponding link
   * Philip S. Thomas, Bruno Castro da Silva, Andrew G. Barto, and Emma Brunskill
 * Safe Exploration in Markov Decision Processes [[Paper]](https://people.eecs.berkeley.edu/~pabbeel/papers/MoldovanAbbeel_ICML2012full-rev2.pdf)
   * Teodor Mihai Moldovan, Pieter Abbeel, ICML, 2012
+* A Comprehensive Survey on Safe Reinforcement Learning[[Paper]](http://jmlr.org/papers/v16/garcia15a.html)
+  * Javier Garcia, Fernando Fernandez, JMLR, 2015
