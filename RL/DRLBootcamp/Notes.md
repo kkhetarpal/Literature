@@ -15,4 +15,8 @@ Motivation + Overview + Exact Solution Methods
 - [x] RL Algorithms Landscape
 - [x] Optimal Control 
   Given an MDP (S,A,P,R,y,H) find the optimal policy the one that maximizes the expected reward
-  
+- [x] Optimal Value Function V
+  * Starting from a state s and acting optimally, maximize the sum of discounted rewards  
+  * Actions deterministically successfull means you take some actions and it happens for sure
+- [x] Value Iteration 
+`Vk*(s) = max [Summation (P(s'|s,a) (R(s,a,s') + yVk-1(s'))`
