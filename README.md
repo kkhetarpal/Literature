@@ -8,6 +8,9 @@ Repository of my reading lists, selected paper summaries, and corresponding link
 * Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks [[Paper]](https://arxiv.org/pdf/1703.03400.pdf)
   * Chelsea Finn, Pieter Abbeel, Sergey Levine, ICML, 2017
 
+# [Reinforcement Learning - Summary Notes](https://github.com/kkhetarpal/Literature/tree/master/RL/SuttonBartoSilver)
+Sutton and Barto chapter summaries and notes from David Silver lectures from UCL
+
 
 # Vision | NLP - Literature
 Repository of my reading lists, paper summaries, and corresponding links
