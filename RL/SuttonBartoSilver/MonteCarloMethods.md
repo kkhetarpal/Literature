@@ -45,8 +45,15 @@ Consdier following a policy of sticking if the sum of the cards >= 20 otherwise 
 
 
 **Incremental Updates**
- * Mean of a sequence x1, x2.... can be computed incrementally by using the formulae: `New Mean = Old Mean + StepSize (Target Value - Old Estimate)`
-
+ * Mean of a sequence x1, x2.... can be computed incrementally by using the formulae:
+ `New Mean = Old Mean + StepSize (Target Value - Old Estimate)`
+ * Similarly, applying incremental updates to Monte-Carlo updates. 
+   * Update V(s) incrementally after every episode `S1, A1, R2 ... ST`.
+   * For each state St with return Gt;
+      * `N(St) <- N(St) + 1`
+      * `V(St) = V(St) + 1/N(St) (Gt - V(St))` \\ incrementally updating mean episode by episode
+* When we do not want to remember everything that happened way long back, we can use a constant step-size which guves us a exponential forgetting rate.
+      * `V(St) = V(St) + alpha (St) (Gt - V(St))` 
 
 **Monte-Carlo Estimation of Action Values**
 - **Goal**: to estimate q_pi(s,a), the expected return when starting in a state s, taking action a and thereafter following policy pi.
