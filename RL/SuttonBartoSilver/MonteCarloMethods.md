@@ -6,8 +6,8 @@
 **What is Model Free Prediction or Monte Carlo Methods?**
 - The idea of MC methods is to learn directly from the episodes of experiences i.e. learn from complete episodes which involves no bootsrapping. 
 - MC methods are model-free i.e. no knowledge of MDP transitions or rewards is given
-- It is well suited for episodic tasks only wherein the value function = mean return of the episodes. Look up sample returns and average over them. 
-- Experience is divided over episodes, and all espisodes eventually terminate.
+- It is well suited for episodic tasks only wherein the value function = mean return of the episodes. Look up sample returns and average over them. One episode I got a return of 5, next episode of 7, the mean would give me the empirical return.
+- Experience is divided over episodes, and all espisodes eventually terminate.  
 - MC methods can thus be incremental in an episode-by-episode sense, but not in a step-by-step (online) sense.
 - Follow the GPI framework wherein first we consider the prediction problem and then the policy improvmement, and finally the control problem and its solution by GPI.
 
@@ -19,9 +19,9 @@
 
 **Monte-Carlo Policy Evaluation**
 - **Goal**: learn value function v_{\pi} from episodes of experiences i.e. S1, A1, R1, S2, A2, R2, ... Sk ~ pi
-  * Look at the stream of experience and look at total discounted reward we got at each time step onwards
-  * The value function is nothing but the expected return v_{\pi} = E[Gt | St=s]
-  * In MC policy evaluation uses *empirical mean* return instead of the expected return
+  * Look at the stream of experience and look at total discounted reward we got at each time step onwards until the end of the episode
+  * The value function is nothing but the expected return `v_{\pi} = E[Gt | St=s]`
+  * In MC policy evaluation uses *empirical mean return* instead of the expected return
 
 - **First-Visit Monte-Carlo Policy Evaluation**
   * To evaluate a state s, 
@@ -40,6 +40,9 @@
   * Value is estimated by mean return V(s) = S(s) / N(s)
   * By law of large numbers, as N(s) -> infinity, the value converges to the true value function
   
+**High level takeAway from the Blackjack Example**
+Consdier following a policy of sticking if the sum of the cards >= 20 otherwise twist. We get a decent estimate of states after 10,000 episodes. As one would expect if you have got 20-21 you do very well in this game. This results just by sampling. No one told us the return, we see the expected return i.e. the estimated value function just by sampling. 
+   
 **Monte-Carlo Estimation of Action Values**
 - **Goal**: to estimate q_pi(s,a), the expected return when starting in a state s, taking action a and thereafter following policy pi.
 
