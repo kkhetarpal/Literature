@@ -20,3 +20,4 @@ Motivation + Overview + Exact Solution Methods
   * Actions deterministically successfull means you take some actions and it happens for sure
 - [x] Value Iteration 
 `Vk*(s) = max [Summation (P(s'|s,a) (R(s,a,s') + yVk-1(s'))`
+![Alt text](https://github.com/kkhetarpal/Literature/tree/master/RL/DRLBootcamp/ValueIteration.png?raw=true "Optional Title")
