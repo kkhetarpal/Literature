@@ -23,3 +23,4 @@ Motivation + Overview + Exact Solution Methods
 ![Value Iteration Algorithm](https://github.com/kkhetarpal/Literature/tree/master/RL/DRLBootcamp/ValueIteration.png?raw=true "Optional Title")
 - [x] Effect of Discounting and Noise
 - [x] ![Q values](https://github.com/kkhetarpal/Literature/tree/master/RL/DRLBootcamp/QValues.png?raw=true "Optional Title")
+- [x] ![Policy Iteration](https://github.com/kkhetarpal/Literature/tree/master/RL/DRLBootcamp/PolicyIteration.png?raw=true "Optional Title")
