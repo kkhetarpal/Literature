@@ -31,3 +31,5 @@ Sampling-based Approximations and Function Fitting
 
 - [x] ![Tabular Q Value Learning](https://github.com/kkhetarpal/Literature/tree/master/RL/DRLBootcamp/TabularQLearning.png?raw=true "Optional Title")
 - [x] ![Tabular Q Learning Algorithm](https://github.com/kkhetarpal/Literature/tree/master/RL/DRLBootcamp/TabularQLearningAlgo.png?raw=true "Optional Title")
+- [x] Sampling Actions: Greedily, Random Actions, e-greedy actions
+- [x] ![Q Learning Properties](https://github.com/kkhetarpal/Literature/tree/master/RL/DRLBootcamp/QLearningPropertiesI.png?raw=true "Optional Title")
