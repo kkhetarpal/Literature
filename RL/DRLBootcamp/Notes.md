@@ -35,3 +35,4 @@ Sampling-based Approximations and Function Fitting
 - [x] ![Q Learning Properties](https://github.com/kkhetarpal/Literature/tree/master/RL/DRLBootcamp/QLearningPropertiesI.png?raw=true "Optional Title")
 - [x] ![Generalizing across states](https://github.com/kkhetarpal/Literature/tree/master/RL/DRLBootcamp/GeneralizeAcrossStates.png?raw=true "Optional Title")
 - [x] ![Approximate Q Learning](https://github.com/kkhetarpal/Literature/tree/master/RL/DRLBootcamp/ApproximateQLearning.png?raw=true "Optional Title")
+- [x] ![Motivation for Deep RL](https://github.com/kkhetarpal/Literature/tree/master/RL/DRLBootcamp/WhyDeepRL.png?raw=true "Optional Title")
