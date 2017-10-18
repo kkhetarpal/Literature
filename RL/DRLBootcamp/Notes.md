@@ -30,3 +30,4 @@ Motivation + Overview + Exact Solution Methods
 Sampling-based Approximations and Function Fitting
 
 - [x] ![Tabular Q Value Learning](https://github.com/kkhetarpal/Literature/tree/master/RL/DRLBootcamp/TabularQLearning.png?raw=true "Optional Title")
+- [x] ![Tabular Q Learning Algorithm](https://github.com/kkhetarpal/Literature/tree/master/RL/DRLBootcamp/TabularQLearningAlgo.png?raw=true "Optional Title")
