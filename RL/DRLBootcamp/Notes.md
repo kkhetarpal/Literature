@@ -24,3 +24,9 @@ Motivation + Overview + Exact Solution Methods
 - [x] Effect of Discounting and Noise
 - [x] ![Q values](https://github.com/kkhetarpal/Literature/tree/master/RL/DRLBootcamp/QValues.png?raw=true "Optional Title")
 - [x] ![Policy Iteration](https://github.com/kkhetarpal/Literature/tree/master/RL/DRLBootcamp/PolicyIteration.png?raw=true "Optional Title")
+
+
+[Lecture 2](https://www.youtube.com/watch?v=qO-HUo0LsO4) 
+Sampling-based Approximations and Function Fitting
+
+- [x] ![Tabular Q Value Learning](https://github.com/kkhetarpal/Literature/tree/master/RL/DRLBootcamp/TabularQLearning.png?raw=true "Optional Title")
