@@ -77,5 +77,6 @@ Alternatively, by **considering only policies that are stochastic with a nonzero
    
  **Monte-Carlo Exploring Starts**
  * All returns for each state-action pair are accumulated and averaged, irrespective of what policy was in force.
- * Monte Carlo ES algorithm
+ * Monte Carlo ES algorithm is bound to converge to an optimal policy, as the action-value function decrease over time.
  ![Monte Carlo ES algorithm](https://github.com/kkhetarpal/Literature/tree/master/RL/SuttonBartoSilver/MC_ExploringStarts.png "Optional Title")
+ 
