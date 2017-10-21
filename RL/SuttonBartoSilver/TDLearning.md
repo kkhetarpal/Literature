@@ -31,3 +31,29 @@ TD can learn **before** knowing the final outcome and also can learn **without**
 MC has high variance, zero bias whereas TD has low variance and some bias. TD usually is more efficient than MC and converges to the true value of value function.
 
 TD exploits the Markov property by builing MDP structure explicitly and hence is more efficient in Markov environments. On the contrary, MC does not exploit these properties.
+
+**MC vs TD vs DP Backup**
+
+MC: We can think of updates as backups. Start at some state and implicitly there is some look ahead. MC samples one full trajectory and uses that to update the V values. `V(St) <- V(St) + alpha (G(t) - V(St))`
+
+TD: the back up is just over one step. We just look one step ahead - we get a sample of what happens and we back up the sample. `V(St) <- V(St) + alpha (Rt+1 + y V(St+1) - V(St))`
+
+DP: We also do a one-step look ahead. BUT we did not sample. We needed to know the dynamics. We took an action and took an expectation over all possible states we might end up in with that action. We could also do an exhaustive look ahead and back up.
+
+
+**Two Dimensions to understand TD,MC and DP**
+**Bootstrapping: update involves an estimate**
+- One does not uses a real return but uses an estimate of the return.
+- MC does not bootsrap - it uses the real return
+- DP & TD does (immediate reward + bootsrap from an estimated value of the next step)
+
+**Sampling: updates samples an expectation**
+- MC samples the environment - we do not need to do a full-width update
+- DP does not sample- does a full width update
+- TD samples
+
+**Unified View of RL** 
+- Full Backups vs Sample Backups
+- Shallow Backups vs Deep backups
+- Combination of both is TD(Lambda) 
+
