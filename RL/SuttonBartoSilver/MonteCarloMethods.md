@@ -26,9 +26,9 @@
 - **First-Visit Monte-Carlo Policy Evaluation**
   * To evaluate a state s, 
   * The first time step t that state s is visited in an episode
-  * Increment counter `N(s) <- N(s) + 1` (over a set of episodes, how many times we visited a particular state)
-  * Increment total return over many episodes `S(s) <- S(s) + Gt`
-  * Value is estimated by mean return `V(s) = S(s) / N(s)`
+   * Increment counter `N(s) <- N(s) + 1` (over a set of episodes, how many times we visited a particular state)
+   * Increment total return over many episodes `S(s) <- S(s) + Gt`
+   * Value is estimated by mean return `V(s) = S(s) / N(s)`
   * By law of large numbers, as N(s) -> infinity, the value converges to the true value function of our policy as we get more and more samples
   * We want to make sure that every state in the trajectory is visited for states we care about to have a sufficiently large N for this to work. By following the policy pi we guarantee that we see enough visits to states.
  
@@ -70,5 +70,12 @@ Alternatively, by **considering only policies that are stochastic with a nonzero
  * Goal is to approximate optimal policies
  * Consider a MC version of classical policy iteration. This process involves alternating complete steps of policy evaluation and policy improvement, beginning with an arbitrary policy pi0 and ending with the optimal policy and optimal action-value function.
    * Policy evaluation is done as decribed above. Assuming we do indeed observe infinite number of episodes, and that these episodes are generated with exploring starts. MC methods will computer q_pi_k for arbitrary pi_k
-   * Policy improvement is done by making the policy greedy w.r.t the current value function. For any action-value function q, the corresponding greedy policy is the one that, for each s E S, deterministically chooses an action with maximal action-value: pi(s) = argmax a( q(s,a) ). 
-   * PI can then be done by constructing each pi_k+1 with respect to q_pi_k. The policy improvement theorem assures that the pi_k+1 os uniformily better than pi_k or just as good as pi_k. This assures the process converges to optimal policy and value function.
+   * Policy improvement is done by making the policy greedy w.r.t the current value function. For any action-value function q, the corresponding greedy policy is the one that, for each s E S, deterministically chooses an action with maximal action-value: `pi(s) = argmax a( q(s,a) )`
+   * Policy improvement can then be done by constructing each pi_k+1 with respect to q_pi_k. 
+   The policy improvement theorem assures that the **pi_k+1 os uniformily better than pi_k or just as good as pi_k. This assures the process converges to optimal policy and value function**.
+   * MC methods can thus be used to find optimal policies given only sample episodes and no other knowledge of environment's dynamics
+   
+ **Monte-Carlo Exploring Starts**
+ * All returns for each state-action pair are accumulated and averaged, irrespective of what policy was in force.
+ * Monte Carlo ES algorithm
+ ![Monte Carlo ES algorithm](/../https://github.com/kkhetarpal/Literature/tree/master/RL/SuttonBartoSilver/MC_ExploringStarts.png?raw=true "Optional Title")
