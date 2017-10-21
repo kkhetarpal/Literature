@@ -57,3 +57,18 @@ DP: We also do a one-step look ahead. BUT we did not sample. We needed to know t
 - Shallow Backups vs Deep backups
 - Combination of both is TD(Lambda) 
 
+
+**TD Lambda** 
+- Consider the n step returns for n = 1,2, ... inf
+  n =1: TD(0) 1 step return
+  n =2: TD(1) 2 step return
+  ..
+  ..
+  n = inf: MC
+  
+- Define the n-step return 
+`Gtn = Rt+1 + yRt+2+ .... y^(n-1)Rt+n + y^(n)V(St+n)`
+
+- n-step temporal difference learning
+`V(St) <- V(St) + alpha(Gtn - V(St))`
+
