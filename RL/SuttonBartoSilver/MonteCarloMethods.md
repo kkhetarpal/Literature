@@ -13,7 +13,7 @@
 
 **Monte Carlo vs DP**
 - The estimate for one state does not build upon the estimate of any other state as is the case with DP.
-- In context of the backup diagrams, MC diagram shows only those samples on the one episode, DP digram shows all possible transitions
+- In context of the backup diagrams, MC diagram shows only those samples on the one episode, DP diagram shows all possible transitions
 - MC diagarams goes all the way to the end of an episode whereas DP diagram include only one-step transition
 - [MC over DP ?] MC has the ability to learn over actual experience, from simulated experience, and is computationally inexpensive as it can be used to estimate the value of a single state irrespective of the other states
 
