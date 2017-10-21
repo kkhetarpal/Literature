@@ -80,3 +80,7 @@ Alternatively, by **considering only policies that are stochastic with a nonzero
  * Monte Carlo ES algorithm is bound to converge to an optimal policy, as the action-value function decrease over time.
  ![Monte Carlo ES algorithm](https://github.com/kkhetarpal/Literature/tree/master/RL/SuttonBartoSilver/MC_ExploringStarts.png "Optional Title")
  
+ **How can we avoid the unlikely assumption of exploring starts ?**
+ One approach to do this is by on-policy first-visit Monte Carlo control. In on-policy control methods, the policy is generally soft i.e. pi(s|a)>0 for all s and all a. The high level idea is still that of a GPI. As opposed to MC ES, here we do not require that the policy be taken all the way to a greedy policy, only that it be **moved towards a greedy policy**. This would thus let us avoid the assumption of exploring starts.
+ 
+Complete algorithm for on-policy first visit MC control (for e-soft policies) would generate a episode using a policy pi. For each state action pair appearing in the episode, return following the first occurence of s,a is computed and appended to Returns(s,a). An average of these returns estimates the Q value for that state-action pair. Next, for each state in the episode; an optimal action is the one that maximizes the Q value of that state action pair. For all actions, the policy is derived using the e-greedy algorithm.
