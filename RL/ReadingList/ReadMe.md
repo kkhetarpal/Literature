@@ -5,11 +5,11 @@ Repository of RL reading lists, selected paper summaries, and corresponding link
 * Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks [[Paper]](https://arxiv.org/pdf/1703.03400.pdf) [[Code]](https://github.com/cbfinn/maml)
   * Chelsea Finn, Pieter Abbeel, Sergey Levine, ICML, 2017
 * One-Shot Visual Imitation Learning via Meta-Learning [[Paper]](https://arxiv.org/pdf/1709.04905.pdf)
-Chelsea Finn, Tianhe Yu, Tianhao Zhang, Pieter Abbeel, Sergey Levine
+ * Chelsea Finn, Tianhe Yu, Tianhao Zhang, Pieter Abbeel, Sergey Levine
 * Optimization as a Model for Few-Shot Learning [[Paper]](https://openreview.net/pdf?id=rJY0-Kcll)
- * Sachin Ravi, Hugo Larochelle, ICLR, 2017
+  * Sachin Ravi, Hugo Larochelle, ICLR, 2017
 * Zero-Shot Task Generalization with Multi-Task Deep Reinforcement Learning [[Paper]] (https://arxiv.org/pdf/1706.05064.pdf) &#x1F53A;
- * Junhyuk Oh, Satinder Singh, Honglak Lee, Pushmeet Kohli, (ICML), 2017
+  * Junhyuk Oh, Satinder Singh, Honglak Lee, Pushmeet Kohli, (ICML), 2017
 
 # AI Safety: Risk, Transparency, Explainability, 
 * On ensuring that machines are well behaved [[Paper]](https://arxiv.org/pdf/1708.05448.pdf) [[Summary]](https://github.com/kkhetarpal/Literature/blob/master/OnEnsuringthatIntelligentMachinesAreWellBehaved.md)
