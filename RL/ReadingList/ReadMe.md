@@ -24,7 +24,7 @@ Repository of RL reading lists, selected paper summaries, and corresponding link
   * Smitha Milli, Dylan Hadfield-Menell, Anca Dragan, Stuart Russell
 * Enabling Robots to Communicate their Objectives [[Paper]](https://arxiv.org/pdf/1702.03465.pdf)
   * Sandy H. Huang, David Held, Pieter Abbeel, Anca D. Dragan
-* Safe Model-based Reinforcement Learning with Stability Guarantees
+* Safe Model-based Reinforcement Learning with Stability Guarantees [[Paper]](https://arxiv.org/pdf/1705.08551.pdf)
   * Felix Berkenkamp, Matteo Turchetta, Angela Schoellig, Andreas Krause, NIPS 2017
  
 # Reward Design, Inverse RL
