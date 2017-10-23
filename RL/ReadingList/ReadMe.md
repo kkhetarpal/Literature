@@ -2,7 +2,7 @@
 Repository of RL, DL reading lists, selected paper summaries, and corresponding links
 
 # Meta-Learning, Transfer Learning
-* Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks [[Paper]](https://arxiv.org/pdf/1703.03400.pdf) [[Code]](https://github.com/cbfinn/maml)
+* Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks [[Paper]](https://arxiv.org/pdf/1703.03400.pdf) [[Code]](https://github.com/cbfinn/maml) [[Summary in progress]](https://github.com/kkhetarpal/Literature/blob/master/Meta-Learning.md)
   * Chelsea Finn, Pieter Abbeel, Sergey Levine, ICML, 2017
 * One-Shot Visual Imitation Learning via Meta-Learning [[Paper]](https://arxiv.org/pdf/1709.04905.pdf)
   * Chelsea Finn, Tianhe Yu, Tianhao Zhang, Pieter Abbeel, Sergey Levine
