@@ -34,5 +34,5 @@ Repository of RL, DL reading lists, selected paper summaries, and corresponding 
   * Dylan Hadfield-Menell, Anca Dragan Pieter Abbeel Stuart Russell, NIPS, 2016
 * Reward Design via Online Gradient Ascent [[Paper]](https://papers.nips.cc/paper/4146-reward-design-via-online-gradient-ascent.pdf)
   * Jonathan Sorg, Satinder Singh, Richard L. Lewis, NIPS, 2010
-* Deep Learning for Reward Design to Improve Monte Carlo Tree Search in ATARI Games [[Paper]] (https://www.ijcai.org/Proceedings/16/Papers/218.pdf) &#x1F53A;
+* Deep Learning for Reward Design to Improve Monte Carlo Tree Search in ATARI Games [[Paper]](https://www.ijcai.org/Proceedings/16/Papers/218.pdf) &#x1F53A;
   * Xiaoxiao Guo, Satinder Singh, Richard Lewis, Honglak Lee, IJCAI, 2016
