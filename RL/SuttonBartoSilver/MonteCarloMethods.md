@@ -5,7 +5,7 @@
 
 **What is Model Free Prediction or Monte Carlo Methods?**
 - The idea of MC methods is to **learn directly from the episodes of experiences** i.e. learn from complete episodes which involves no bootsrapping. 
-- MC methods are model-free i.e. no knowledge of MDP transitions or rewards is given
+- MC methods are ```diff model-free``` i.e. no knowledge of MDP transitions or rewards is given
 - It is well suited for episodic tasks only wherein the value function = mean return of the episodes. Look up sample returns and average over them. One episode I got a return of 5, next episode of 7, the mean would give me the empirical return.
 - Experience is divided over episodes, and all espisodes eventually terminate.  
 - MC methods can thus be incremental in an episode-by-episode sense, but not in a step-by-step (online) sense.
