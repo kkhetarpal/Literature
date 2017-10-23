@@ -4,7 +4,7 @@
 ## Chapter 5 - Monte Carlo Methods by Rich Sutton, Lecture 4 - Model Free Prediction by David Silver 
 
 **What is Model Free Prediction or Monte Carlo Methods?**
-- The idea of MC methods is to learn directly from the episodes of experiences i.e. learn from complete episodes which involves no bootsrapping. 
+- The idea of MC methods is to **learn directly from the episodes of experiences** i.e. learn from complete episodes which involves no bootsrapping. 
 - MC methods are model-free i.e. no knowledge of MDP transitions or rewards is given
 - It is well suited for episodic tasks only wherein the value function = mean return of the episodes. Look up sample returns and average over them. One episode I got a return of 5, next episode of 7, the mean would give me the empirical return.
 - Experience is divided over episodes, and all espisodes eventually terminate.  
@@ -84,3 +84,10 @@ Alternatively, by **considering only policies that are stochastic with a nonzero
  One approach to do this is by on-policy first-visit Monte Carlo control. In on-policy control methods, the policy is generally soft i.e. pi(s|a)>0 for all s and all a. The high level idea is still that of a GPI. As opposed to MC ES, here we do not require that the policy be taken all the way to a greedy policy, only that it be **moved towards a greedy policy**. This would thus let us avoid the assumption of exploring starts.
  
 Complete algorithm for on-policy first visit MC control (for e-soft policies) would generate a episode using a policy pi. For each state action pair appearing in the episode, return following the first occurence of s,a is computed and appended to Returns(s,a). An average of these returns estimates the Q value for that state-action pair. Next, for each state in the episode; an optimal action is the one that maximizes the Q value of that state action pair. For all actions, the policy is derived using the e-greedy algorithm.
+
+
+
+```diff
++ this will be highlighted in green
+- this will be highlighted in red
+```
