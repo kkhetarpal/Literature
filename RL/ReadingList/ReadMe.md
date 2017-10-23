@@ -8,7 +8,7 @@ Repository of RL reading lists, selected paper summaries, and corresponding link
 Chelsea Finn, Tianhe Yu, Tianhao Zhang, Pieter Abbeel, Sergey Levine
 * Optimization as a Model for Few-Shot Learning [[Paper]](https://openreview.net/pdf?id=rJY0-Kcll)
  * Sachin Ravi, Hugo Larochelle, ICLR, 2017
-* (&#x1F53A;) Zero-Shot Task Generalization with Multi-Task Deep Reinforcement Learning [[Paper]] (https://arxiv.org/pdf/1706.05064.pdf)
+* &#x1F53A; Zero-Shot Task Generalization with Multi-Task Deep Reinforcement Learning [[Paper]] (https://arxiv.org/pdf/1706.05064.pdf)
  * Junhyuk Oh, Satinder Singh, Honglak Lee, Pushmeet Kohli, (ICML), 2017
 
 # AI Safety: Risk, Transparency, Explainability, 
