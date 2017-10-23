@@ -29,7 +29,7 @@ Repository of RL, DL reading lists, selected paper summaries, and corresponding 
  
 # Reward Design, Inverse RL
 * Inverse Reward Design[[Paper]](https://nips.cc/Conferences/2017/Schedule?showEvent=9444)
-  * Dylan Hadfield-Menell, Smitha Milli, Stuart J Russell, Pieter Abbeel, Anca Dragan, NIPS, 2016
+  * Dylan Hadfield-Menell, Smitha Milli, Stuart J Russell, Pieter Abbeel, Anca Dragan, NIPS, 2017
 * Cooperative Inverse Reinforcement Learning [[Paper]](https://papers.nips.cc/paper/6420-cooperative-inverse-reinforcement-learning.pdf)
   * Dylan Hadfield-Menell, Anca Dragan Pieter Abbeel Stuart Russell, NIPS, 2016
 * Reward Design via Online Gradient Ascent [[Paper]](https://papers.nips.cc/paper/4146-reward-design-via-online-gradient-ascent.pdf)
