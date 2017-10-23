@@ -9,9 +9,14 @@
 
 **Generalize Policy Iteration with Monte-Carlo Evaluation**
 
-If we use Monte policy evaluation (i.e. running many sample trajectories and take a mean of these samples as our estimate of V). Next policy improvement by following greedy/e-greedy methods.
+ If we use Monte policy evaluation (i.e. running many sample trajectories and take a mean of these samples as our estimate of   V). Next policy improvement by following greedy/e-greedy methods.
 
-Problems posed: Running some samples of trajectories and acting greedily with respect to that would result in 2 problems:
-  * Running a policy you are following a specific set of actions and hence visiting specific regions of the state space. Acting greedily all the time would not allow exploration of all possible states. Might lead to sub-optimal solutions.
-  * Greedy policy improvement over V(S) requires model of MDP i.e. Pss'. If you are acting greedily w.r.t. value function, the policy improvement step requires model of MDP. `pi'(s) = argmax R + Pss' V(s')`
-   
+ **_Problems posed:_** Running some samples of trajectories and acting greedily with respect to that would result in 2   problems:
+   * Running a policy you are following a specific set of actions and hence visiting specific regions of the state space.    Acting greedily all the time would not allow exploration of all possible states. Might lead to sub-optimal solutions.
+   * Issue is we are trying to be model free- but how can you be model free when you are using state-value fucntion
+ Greedy policy improvement over V(S) requires model of MDP i.e. Pss'. If you are acting greedily w.r.t. value function, the policy improvement step requires model of MDP. 
+  `pi'(s) = argmax|a [R + Pss' V(s')]`
+
+ **Instead**, greedy policy improvement over action-value function Q(s,a) is **_model-free_**
+ `pi'(s) = argmax|a [Q(s,a)]
+
