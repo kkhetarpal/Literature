@@ -8,7 +8,7 @@ Repository of RL reading lists, selected paper summaries, and corresponding link
 Chelsea Finn, Tianhe Yu, Tianhao Zhang, Pieter Abbeel, Sergey Levine
 * Optimization as a Model for Few-Shot Learning [[Paper]](https://openreview.net/pdf?id=rJY0-Kcll)
  * Sachin Ravi, Hugo Larochelle, ICLR, 2017
-* &#x1F53A; Zero-Shot Task Generalization with Multi-Task Deep Reinforcement Learning [[Paper]] (https://arxiv.org/pdf/1706.05064.pdf)
+* Zero-Shot Task Generalization with Multi-Task Deep Reinforcement Learning [[Paper]] (https://arxiv.org/pdf/1706.05064.pdf) &#x1F53A;
  * Junhyuk Oh, Satinder Singh, Honglak Lee, Pushmeet Kohli, (ICML), 2017
 
 # AI Safety: Risk, Transparency, Explainability, 
@@ -34,5 +34,5 @@ Felix Berkenkamp, Matteo Turchetta, Angela Schoellig, Andreas Krause, NIPS 2017
  * Dylan Hadfield-Menell, Anca Dragan Pieter Abbeel Stuart Russell, NIPS, 2016
 * Reward Design via Online Gradient Ascent [[Paper]](https://papers.nips.cc/paper/4146-reward-design-via-online-gradient-ascent.pdf)
  * Jonathan Sorg, Satinder Singh, Richard L. Lewis, NIPS, 2010
-* Deep Learning for Reward Design to Improve Monte Carlo Tree Search in ATARI Games [[Paper]] (https://www.ijcai.org/Proceedings/16/Papers/218.pdf)
+* Deep Learning for Reward Design to Improve Monte Carlo Tree Search in ATARI Games [[Paper]] (https://www.ijcai.org/Proceedings/16/Papers/218.pdf) &#x1F53A;
  * Xiaoxiao Guo, Satinder Singh, Richard Lewis, Honglak Lee, IJCAI, 2016
