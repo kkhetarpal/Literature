@@ -23,5 +23,36 @@
   
   
 &#x1F53A;**E-greedy Exploration** All m actions are tried with non-zero probability. With probability 1-e choose the greedy action whereas, with probability e choose an action at random. 
-  
+ * Theorem: For any greedy policy pi, the e-greedy policy pi' wrt q_pi is an improvement, v_pi'(s) >= v_pi(s)
 
+
+&#x1F53A; **Monte Carlo Policy Iteration**
+ - Policy evaluation: Monte carlo using action values Q = q_pi
+ - Policy Improvement: E-greedy policy improvement 
+
+It is not necessary to **fully** evaluate your policy. Sometimes, you have already got enough knowledge of your current policy. Let's say we update our estimate of value functions **every episode**. 
+
+
+&#x1F53A; **How can we guarantee we find the best possible policy**
+We must continue exploring but also reach asymptotically reach to the optimal policy and stop exploring. One approach is called GLIE; **_Greedy in the Limit with Infinite Exploration (GLIE)_**
+ * All state-action pairs are explored infinitely many times
+ * the policy converges on a greedy policy
+ 
+**GLIE Monte-Carlo Control**
+In this algorithm, we sample kth episode (S,A,R) using a policy pi. For each state St and action we visited, increment the count and update our mean action value by incrementally updating the mean. Improve our policies on new action-value functions.
+GLIE converges to the optimal value functions and policies. 
+
+
+&#x1F53A; **TD Control** TD has low variance, can be run online and works for incomplete sequences. Keeping the GPI framework, let us replace MC with TD in our control loop. This would comprise of:
+  * Apply TD to Q(S,A)
+  * Use e-greedy policy improvement
+  * We do not need to wait for long so we just *update every time-step*
+  
+This general idea is called &#x1F53A; **Sarsa** where the idea is use TD learning to estimate Q: **Updating Action-Value Functions with Sarsa**. Starting off in some state action pair **(S,A)**, we sample from the environment and end up with a reward **R**. end This results us ending up in a new state **S'** where we sample from our policy to generate **A'**
+
+Sarsa Update: `Q(S,A) <- Q(S,A) + alpha[(R + yQ(S'A')) - Q(S,A)]`
+Sarsa is an on-policy algorithm. We are taking actions and evaluating policies. 
+
+Convergence of Sarsa is guranteed under the GLIE sequence of policies and Robbins-Monro sequence of step-sizes.
+  
+ 
