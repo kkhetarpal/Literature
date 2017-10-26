@@ -3,7 +3,6 @@
 
 ## Chapter 5 - Monte Carlo Methods by Rich Sutton, Lecture 4 - Model Free Prediction by David Silver 
 
-# If someone gives us a policy 
 **What is Model Free Prediction or Monte Carlo Methods?**
 - The idea of MC methods is to **learn directly from the episodes of experiences** i.e. learn from complete episodes which involves no bootsrapping. 
 - MC methods are model-free i.e. no knowledge of MDP transitions or rewards is given
@@ -86,9 +85,16 @@ Alternatively, by **considering only policies that are stochastic with a nonzero
  
 Complete algorithm for on-policy first visit MC control (for e-soft policies) would generate a episode using a policy pi. For each state action pair appearing in the episode, return following the first occurence of s,a is computed and appended to Returns(s,a). An average of these returns estimates the Q value for that state-action pair. Next, for each state in the episode; an optimal action is the one that maximizes the Q value of that state action pair. For all actions, the policy is derived using the e-greedy algorithm.
 
+ **Off-policy with Importance Sampling ?**
+ 
+ How can the learning agent learn about the optimal policy while behaving according to an exploratory policy?
 
+ Another approach is to use two policies, one that is learned about and that becomes the optimal policy, and one that is more exploratory and is used to generate behavior. The policy being learned about is called the **target policy**, and the policy used to generate behavior is called the **behavior policy**. In this case we say that learning is from data “off” the target policy, and the overall process is termed off-policy learning.
+ 
+ Off-policy methods require additional concepts and notation, and because the data is due to a different policy, off-policy methods are often of greater variance and are slower to converge.
+ 
+ What is Importance Sampling:
+  * a general technique for estimating expected values under one distribution given samples from another
+  * is applied to off-policy learning by weighting returns according to the relative probability of their trajectories occurring under the target and behavior policies, called the importance-sampling ratio
+  
 
-```diff
-+ this will be highlighted in green
-- this will be highlighted in red
-```
