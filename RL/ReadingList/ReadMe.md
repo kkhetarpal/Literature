@@ -31,13 +31,7 @@ Repository of RL, DL reading lists, selected paper summaries, and corresponding 
  * Cooperative Inverse Reinforcement Learning [[Paper]](https://papers.nips.cc/paper/6420-cooperative-inverse-reinforcement-learning.pdf) [[Lecture Slides]](https://web.stanford.edu/class/cs234/slides/cs234_guest_lecture_cooperative_inverse_rl.pdf)
    * Dylan Hadfield-Menell, Anca Dragan Pieter Abbeel Stuart Russell, NIPS, 2016
 
-
-# Interesing Thesis
- * The Optimal Reward Problem: Designing Effective Reward for Bounded Agents [[Thesis]](https://deepblue.lib.umich.edu/bitstream/handle/2027.42/89705/jdsorg_1.pdf?sequence=1)
-
-
-
-  
+ 
 # Reward Design, Intrinsic Motivation 
  * Intrinsically Motivated Reinforcement Learning: An Evolutionary Perspective[[Paper]](https://web.eecs.umich.edu/~baveja/Papers/IMRLIEEETAMDFinal.pdf)
    * Satinder Singh, Richard L. Lewis, Andrew G. Barto, and Jonathan Sorg, 2010 
@@ -47,3 +41,6 @@ Repository of RL, DL reading lists, selected paper summaries, and corresponding 
    * Dylan Hadfield-Menell, Smitha Milli, Stuart J Russell, Pieter Abbeel, Anca Dragan, NIPS, 2017
 * Deep Learning for Reward Design to Improve Monte Carlo Tree Search in ATARI Games [[Paper]](https://www.ijcai.org/Proceedings/16/Papers/218.pdf) &#x1F53A;
    * Xiaoxiao Guo, Satinder Singh, Richard Lewis, Honglak Lee, IJCAI, 2016
+   
+# Interesing Thesis
+ * The Optimal Reward Problem: Designing Effective Reward for Bounded Agents [[Thesis]](https://deepblue.lib.umich.edu/bitstream/handle/2027.42/89705/jdsorg_1.pdf?sequence=1)
