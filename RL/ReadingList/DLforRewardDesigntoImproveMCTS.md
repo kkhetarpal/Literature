@@ -23,13 +23,12 @@ Xiaoxiao Guo, Satinder Singh, Richard Lewis, Honglak Lee, 2016
  **PGRD-DL: Policy Gradient for Reward Design with Deep Learning**
  - UCT computes a score that combines a i) **UCB based exploration term that encourages sampling infrequently sampled actions**, with ii) an **exploitation term computed from the trajectories sampled thus far**.
  - In a full H-length trajectory with state action pairs; UCT estimates the exploitation-term value of a state, action, depth tuple (s,a,d) as the average return obtained after experiencing the tuple:
- `Q(s,a,d) = Summation_i1toN ( I_i(s,a,d)/n(s,a,d)) Summation_hdtoH-1 (y^(h-d) * R(s_h^i,a_h^i)` 
- where 
-   N: number of trajectories sampled
-   y: discount factor
-   n(s,a,d): number of times the tuple (s,a,d) has been sampled
-   I_i(s,a,d) is 1 if the tuple is in the ith trajectory else it is 0
-   s_h^i and a)h^i is the hth state and action in the ith trajectory
+    *  `Q(s,a,d) = Summation_i1toN ( I_i(s,a,d)/n(s,a,d)) Summation_hdtoH-1 (y^(h-d) * R(s_h^i,a_h^i)` ----Eq 1) 
+        * N: number of trajectories sampled
+        * y: discount factor
+        * n(s,a,d): number of times the tuple (s,a,d) has been sampled
+        * I_i(s,a,d) is 1 if the tuple is in the ith trajectory else it is 0
+        * s_h^i and a)h^i is the hth state and action in the ith trajectory
    
    
 `
