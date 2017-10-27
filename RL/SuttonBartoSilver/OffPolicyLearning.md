@@ -45,9 +45,9 @@
     ` pi(St+1) = argmax_a' [ Q(St+1,a')] `
   - The behavior policy u is e-greedy w.r.t Q(s,a)
   - The Q learning target then becomes:
-     ` Rt+1 +  yQ(St+1,A') `
-     ` Rt+1 +  yQ(St+1, agrmax_a' [ Q(St+1,a')] ) `
-     ` Rt+1 + max_a' y[Q(St+1,a')]`
+      * ` Rt+1 +  yQ(St+1,A') `
+      * ` Rt+1 +  yQ(St+1, agrmax_a' [ Q(St+1,a')] ) `
+      * ` Rt+1 + max_a' y[Q(St+1,a')]`
      
 **Q-Learning Control Algorithm (SARSAMAX)**
 `Q(S,A) <- Q(S,A) + alpha * [ R + y * max_a'{Q(S',a')} - Q(S,A) ]`
