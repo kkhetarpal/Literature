@@ -32,6 +32,11 @@ Repository of RL, DL reading lists, selected paper summaries, and corresponding 
    * Dylan Hadfield-Menell, Anca Dragan Pieter Abbeel Stuart Russell, NIPS, 2016
 
 
+# Interesing Thesis
+ * The Optimal Reward Problem: Designing Effective Reward for Bounded Agents [[Thesis]](https://deepblue.lib.umich.edu/bitstream/handle/2027.42/89705/jdsorg_1.pdf?sequence=1)
+
+
+
   
 # Reward Design, Intrinsic Motivation 
  * Intrinsically Motivated Reinforcement Learning: An Evolutionary Perspective[[Paper]](https://web.eecs.umich.edu/~baveja/Papers/IMRLIEEETAMDFinal.pdf)
