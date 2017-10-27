@@ -47,12 +47,15 @@ GLIE converges to the optimal value functions and policies.
   * Apply TD to Q(S,A)
   * Use e-greedy policy improvement
   * We do not need to wait for long so we just *update every time-step*
-  
-This general idea is called &#x1F53A; **Sarsa** where the idea is use TD learning to estimate Q: **Updating Action-Value Functions with Sarsa**. Starting off in some state action pair **(S,A)**, we sample from the environment and end up with a reward **R**. end This results us ending up in a new state **S'** where we sample from our policy to generate **A'**
+ 
+&#x1F53A; **Sarsa** where the general idea is use TD learning to estimate Q: 
+**Updating Action-Value Functions with Sarsa**:  Starting off in some state action pair **(S,A)**, we sample from the environment and end up with a reward **R**. end This results us ending up in a new state **S'** where we sample from our policy to generate **A'**
 
 Sarsa Update: `Q(S,A) <- Q(S,A) + alpha[(R + yQ(S'A')) - Q(S,A)]`
 Sarsa is an on-policy algorithm. We are taking actions and evaluating policies. 
 
 Convergence of Sarsa is guranteed under the GLIE sequence of policies and Robbins-Monro sequence of step-sizes.
-  
- 
+
+n-step Sarsa: consider the lambda variances of TD to find the sweet spot between TD(0) and MC. lambda can give us how much we prefer being short sighted vs long sighted. This gives us the Sarsa(lamda) Algorithm. Everytime you get a reward, you gain information and it gets carried backward. 
+
+
