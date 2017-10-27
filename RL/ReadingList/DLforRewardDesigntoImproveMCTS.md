@@ -29,8 +29,16 @@ Xiaoxiao Guo, Satinder Singh, Richard Lewis, Honglak Lee, 2016
         * n(s,a,d): number of times the tuple (s,a,d) has been sampled
         * I_i(s,a,d) is 1 if the tuple is in the ith trajectory else it is 0
         * s_h^i and a)h^i is the hth state and action in the ith trajectory
-   
-   
+ - The key difference between standard use of UCT and its use here in PGRD-DL is how the R aka reward in Eq 1) is defined
+    * Two rewards namely RO (usual objective reward) and RI (internal reward function) is used, wherein a reward bonus that is added to the objective reward bonus; is a multi-layered conv-net. Here theta denotes the reward-bonus parameters. 
+      `RI(s,a;theta) = CNN(s,a;theta) + RO(s,a)`
+ - How does this work?
+    * UCT generates specified number of trajectories. Next the greedy action selection gives 
+      * `a = agrmax QI(s,b,0;theta)` where Q is the action values of the current state
+    * UCT executes actions based on softmax distribution given the estimated action values
+      * u(a|s;theta) = exp QI(s,a,0;theta) / Summation_b exp QI(s,a,0;theta) where u is the UCT agent's policy
+    * UCT policy is governed by these internal rewards. However, the task-specific reward RO alone determines how well the internal reward RI is doing.
+    
 `
 
 
