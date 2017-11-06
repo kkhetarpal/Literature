@@ -17,6 +17,7 @@ In the case of TD Learning Methods
   * Here the estimated return is ` Rt+1 + yV(St+1) ` i.e. the immediate reward and the discounted value at the next time step
   * `V(St) <- V(St) + alpha ((Rt+1 + yV(St+1)) - V(St))` where 
   `TD Target = Rt+1 + yV(St+1)` and `TD Error = Rt+1 + yV(St+1) - V(St)` 
+  * TD target is an estimate as it samples values from expected value and uses a current estimate of V as true v is not known.
   
 **Intuition for TD**
 
