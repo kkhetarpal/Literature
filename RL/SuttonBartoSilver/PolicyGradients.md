@@ -7,7 +7,7 @@
 - Value function approximation approximates the value of being in a state or q-value of being in a state and taking a particular action.
 - However, there a policy was generated from the value function and not explicitly mentioned.
 - Instead, we can directly parameterise the policy, 
-      pi(s,a) = P [a | s, theta]
+      `pi(s,a) = P [a | s, theta]`
 
 Focusing on **model-free** reinforcement learning, we need a function approximator to scale the prediction/control methods in RL.
   
@@ -46,19 +46,19 @@ We have an objective function [how much reward I can get] and we want to make it
 **Analytically compute the policy gradient**
  **MC Policy Gradient - Score Function**
 Assume the policy pi_theta is differential whenever it is non-zero. We will be using the **Likelihood ratios** trick:
-Gradient(pi_theta(s,a)) = pi_theta(s,a)) * Gradient( Log [pi_theta(s,a)] ) where the Gradient( Log [pi_theta(s,a)] ) is called the **Score Function** [This tells us how to adjust the policy to more of a particular action that is good]
+`Gradient(pi_theta(s,a)) = pi_theta(s,a)) * Gradient( Log [pi_theta(s,a)] )` where the Gradient( Log [pi_theta(s,a)] ) is called the **Score Function** [This tells us how to adjust the policy to more of a particular action that is good]
 
 **How do we parametize the policy in a discrete domain?**
 
-      - Let us consider the **Softmax Policy**. Softmax in general is the policy that is propotional to some exponential value. We form some linear combination of features (of actions and states) and weight those features with some parameters. To turn this into probability, we just exponentiate and normalize. The ides is that the probability that we take an action pi_theta(s,a) is propotionate to the exponentiated weighted combination of features. This is called the **Linear softmax policy** 
+-     Let us consider the **Softmax Policy**. Softmax in general is the policy that is propotional to some exponential value. We form some linear combination of features (of actions and states) and weight those features with some parameters. To turn this into probability, we just exponentiate and normalize. The ides is that the probability that we take an action pi_theta(s,a) is propotionate to the exponentiated weighted combination of features. This is called the **Linear softmax policy** 
 
-      - Score function here is { Feature for each state action pair - Average Feature for all actions from that state } aka how much more of this feature do I have. This would be later realized as if there is a feature that appears more than others and this feature gives us good rewards, then we would want the agen to take actions more corresponding to that feature.
+-     Score function here is { Feature for each state action pair - Average Feature for all actions from that state } aka how much more of this feature do I have. This would be later realized as if there is a feature that appears more than others and this feature gives us good rewards, then we would want the agen to take actions more corresponding to that feature.
 
 
 
 **What about a continuous domain?**
 
-      - Gaussian policy takes mean as the linear combination of state features. Policy is actions taken from this normal distribution where mean is as mentioned above and variance is fixed or can be parameterised. Score function here indicates again how much more of some action I am doing than other actions. 
+-    Gaussian policy takes mean as the linear combination of state features. Policy is actions taken from this normal distribution where mean is as mentioned above and variance is fixed or can be parameterised. Score function here indicates again how much more of some action I am doing than other actions. 
 
 
 **Policy Gradient Theorem**
