@@ -70,7 +70,7 @@ Gradient  = E(score function * action value function)
 **Monte-Carlo Policy Gradient (REINFORCE)**
 
 Key Idea: Sample returns at each state action pair and adjust your policy in accordance to the estimate of this sample return. 
--     function REINFORCE
+       function REINFORCE
             - Initialize theta arbitrarily 
             - for each episode {s1,a1,r2, .... sT-1,aT-1, rT} ~ pi_theta do
                   -     for t = 1 to T-1 do
@@ -78,4 +78,4 @@ Key Idea: Sample returns at each state action pair and adjust your policy in acc
                   -     end for
             - end for
             - return theta
-      - end function
+       end function
