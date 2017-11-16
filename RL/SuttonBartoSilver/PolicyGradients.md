@@ -50,16 +50,15 @@ Gradient(pi_theta(s,a)) = pi_theta(s,a)) * Gradient( Log [pi_theta(s,a)] ) where
 
 **How do we parametize the policy in a discrete domain?**
 
-Let us consider the **Softmax Policy**. Softmax in general is the policy that is propotional to some exponential value. 
-We form some linear combination of features (of actions and states) and weight those features with some parameters. To turn this into probability, we just exponentiate and normalize. The ides is that the probability that we take an action pi_theta(s,a) is propotionate to the exponentiated weighted combination of features. This is called the **Linear softmax policy** 
+      - Let us consider the **Softmax Policy**. Softmax in general is the policy that is propotional to some exponential value. We form some linear combination of features (of actions and states) and weight those features with some parameters. To turn this into probability, we just exponentiate and normalize. The ides is that the probability that we take an action pi_theta(s,a) is propotionate to the exponentiated weighted combination of features. This is called the **Linear softmax policy** 
 
-Score function here is { Feature for each state action pair - Average Feature for all actions from that state } aka how much more of this feature do I have. This would be later realized as if there is a feature that appears more than others and this feature gives us good rewards, then we would want the agen to take actions more corresponding to that feature.
+      - Score function here is { Feature for each state action pair - Average Feature for all actions from that state } aka how much more of this feature do I have. This would be later realized as if there is a feature that appears more than others and this feature gives us good rewards, then we would want the agen to take actions more corresponding to that feature.
 
 
 
 **What about a continuous domain?**
 
-Gaussian policy takes mean as the linear combination of state features. Policy is actions taken from this normal distribution where mean is as mentioned above and variance is fixed or can be parameterised. Score function here indicates again how much more of some action I am doing than other actions. 
+      - Gaussian policy takes mean as the linear combination of state features. Policy is actions taken from this normal distribution where mean is as mentioned above and variance is fixed or can be parameterised. Score function here indicates again how much more of some action I am doing than other actions. 
 
 
 **Policy Gradient Theorem**
@@ -71,12 +70,12 @@ Gradient  = E(score function * action value function)
 **Monte-Carlo Policy Gradient (REINFORCE)**
 
 Key Idea: Sample returns at each state action pair and adjust your policy in accordance to the estimate of this sample return. 
-function REINFORCE
-      Initialize theta arbitrarily 
-      for each episode {s1,a1,r2, .... sT-1,aT-1, rT} ~ pi_theta do
-            for t = 1 to T-1 do
-                  theta <- theta + alpha * score function * return
-            end for
-      end for
-      return theta
-end function
+-     function REINFORCE
+            - Initialize theta arbitrarily 
+            - for each episode {s1,a1,r2, .... sT-1,aT-1, rT} ~ pi_theta do
+                  -     for t = 1 to T-1 do
+                  -     theta <- theta + alpha * score function * return
+                  -     end for
+            - end for
+            - return theta
+      - end function
