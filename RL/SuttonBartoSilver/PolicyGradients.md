@@ -60,3 +60,23 @@ Score function here is { Feature for each state action pair - Average Feature fo
 **What about a continuous domain?**
 
 Gaussian policy takes mean as the linear combination of state features. Policy is actions taken from this normal distribution where mean is as mentioned above and variance is fixed or can be parameterised. Score function here indicates again how much more of some action I am doing than other actions. 
+
+
+**Policy Gradient Theorem**
+
+Generalizes the likelihood ratio approach to multi-step MDPs. 
+Replaces instantaneous reward r with long-term value Q(s,a)
+Gradient  = E(score function * action value function)
+
+**Monte-Carlo Policy Gradient (REINFORCE)**
+
+Key Idea: Sample returns at each state action pair and adjust your policy in accordance to the estimate of this sample return. 
+function REINFORCE
+      Initialize theta arbitrarily 
+      for each episode {s1,a1,r2, .... sT-1,aT-1, rT} ~ pi_theta do
+            for t = 1 to T-1 do
+                  theta <- theta + alpha * score function * return
+            end for
+      end for
+      return theta
+end function
