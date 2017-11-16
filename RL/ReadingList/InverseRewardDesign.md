@@ -20,5 +20,6 @@ Dylan Hadfield-Menell, Smitha Milli, Pieter Abbeel, Stuart Russell, Anca Dragan,
   
 
 **My thoughts**
+ * Very interesting theory in their proposed ideas.
  * Experiments were nicely framed, but the conclusions of results were not very well explained. IRD agent performs better than usual seemed more like a given and no detail explaination on 'how' 'why' etc was given.
- * The proposed solution seems to be highly dependent on solving the planning problem. A lot of which seems 
+ * The proposed solution seems to be highly dependent on solving the planning problem. 
