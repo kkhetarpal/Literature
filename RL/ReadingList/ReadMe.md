@@ -37,7 +37,7 @@ Repository of RL, DL reading lists, selected paper summaries, and corresponding 
    * Satinder Singh, Richard L. Lewis, Andrew G. Barto, and Jonathan Sorg, 2010 
 * Reward Design via Online Gradient Ascent [[Paper]](https://papers.nips.cc/paper/4146-reward-design-via-online-gradient-ascent.pdf)
    * Jonathan Sorg, Satinder Singh, Richard L. Lewis, NIPS, 2010
-* Inverse Reward Design[[Paper]](https://nips.cc/Conferences/2017/Schedule?showEvent=9444)
+* Inverse Reward Design[[Paper]](https://nips.cc/Conferences/2017/Schedule?showEvent=9444)[[Summary]](https://github.com/kkhetarpal/Literature/blob/master/RL/ReadingList/InverseRewardDesign.md)
    * Dylan Hadfield-Menell, Smitha Milli, Stuart J Russell, Pieter Abbeel, Anca Dragan, NIPS, 2017
 * Deep Learning for Reward Design to Improve Monte Carlo Tree Search in ATARI Games [[Paper]](https://www.ijcai.org/Proceedings/16/Papers/218.pdf) &#x1F53A;
    * Xiaoxiao Guo, Satinder Singh, Richard Lewis, Honglak Lee, IJCAI, 2016
