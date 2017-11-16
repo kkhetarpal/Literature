@@ -1,5 +1,5 @@
 # Inverse Reward Design
-Xiaoxiao Guo, Satinder Singh, Richard Lewis, Honglak Lee, 2016
+Dylan Hadfield-Menell, Smitha Milli, Pieter Abbeel, Stuart Russell, Anca Dragan, NIPS 2017
 
 ## Summary
 
