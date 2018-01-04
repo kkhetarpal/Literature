@@ -31,6 +31,19 @@ Using SGD, we minimize error on observed samples. SGD adjusts the weight vector 
 
 ` w_t+1 = w_t + alpha [v_pi(St) - v'(St,wt)] PartialDerivative(v'(St,wt)) `
 
+In a scenario we do not know the exact value at a state or it is too noisy, we can appromixate it by substituting Ut in place of v_pi(St).
 
+` w_t+1 = w_t + alpha [Ut - v'(St,wt)] PartialDerivative(v'(St,wt)) `
 
+Since the true value of a state is the expected value of the return following it, the Monte Carlo target Ut = Gt is by definition an unbiased estimate of V_pi(St). 
 
+**Gradient MC Algorithm for estimating v'**
+
+`Input: the policy pi to be evaluated
+ Input: a differentiable function vˆ : S x Rd -> R
+
+ Initialize value-function weights w as appropriate (e.g., w = 0) 
+ Repeat forever:
+  Generate an episode S0,A0,R1,S1,A1,...,RT ,ST using pi
+  For t = 0, 1, . . . , T-1:
+    w <- w + alpha [Gt - v'(St,w)] PartialDerivative(v'(St,w)) `
