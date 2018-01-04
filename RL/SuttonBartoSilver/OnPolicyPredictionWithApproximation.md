@@ -61,6 +61,6 @@ Since the true value of a state is the expected value of the return following it
    - Repeat (for each step of episode): 
      - Choose A ~ pi(. | S)
      - Take action A, observe R, S'
-     -  ` w <- w + alpha [Gt - v'(St,w)] PartialDerivative(v'(St,w)) `
+     -  ` w <- w + alpha [R + gamma * v'(S',w) - v'(S,w)] PartialDerivative(v'(S,w)) `
      -  S <- S'
   - until S is terminal
