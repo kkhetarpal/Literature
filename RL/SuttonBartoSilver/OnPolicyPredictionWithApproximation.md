@@ -39,11 +39,12 @@ Since the true value of a state is the expected value of the return following it
 
 **Gradient MC Algorithm for estimating v'**
 
-`Input: the policy pi to be evaluated
- Input: a differentiable function vˆ : S x Rd -> R
+`
+ * Input: the policy pi to be evaluated
+ * Input: a differentiable function vˆ : S x Rd -> R
 
- Initialize value-function weights w as appropriate (e.g., w = 0) 
- Repeat forever:
-  Generate an episode S0,A0,R1,S1,A1,...,RT ,ST using pi
-  For t = 0, 1, . . . , T-1:
-    w <- w + alpha [Gt - v'(St,w)] PartialDerivative(v'(St,w)) `
+ * Initialize value-function weights w as appropriate (e.g., w = 0) 
+ * Repeat forever:
+  * Generate an episode S0,A0,R1,S1,A1,...,RT ,ST using pi
+  * For t = 0, 1, . . . , T-1:
+     * w <- w + alpha [Gt - v'(St,w)] PartialDerivative(v'(St,w)) `
