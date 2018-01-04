@@ -64,3 +64,6 @@ Since the true value of a state is the expected value of the return following it
      -  ` w <- w + alpha [R + gamma * v'(S',w) - v'(S,w)] PartialDerivative(v'(S,w)) `
      -  S <- S'
   - until S is terminal
+  
+  
+**Linear Methods** are the most common one in which the approximate value function is a linear function of the weight vector. The value function here is said to be linear in weights. **Feature Construction** for linear methods include different approaches depending on the properties and requirements of the states in the problem we are solving. **Polynomials** are one of the simplest families of features that can be used for interpolation and regression. Another option is time based **Fourier functions**. Fourier functions approximators are good for representing global properties and thus make it difficult ways to represent local properties. **Coarse Coding** is one approach used when the state space is continuous two-dimensional. This provides a binary feature representation.  
