@@ -48,3 +48,21 @@ Since the true value of a state is the expected value of the return following it
   - Generate an episode S0,A0,R1,S1,A1,...,RT ,ST using pi
   - For t = 0, 1, . . . , T-1:
      - w <- w + alpha [Gt - v'(St,w)] PartialDerivative(v'(St,w)) `
+
+
+
+**Semi-gradient TD(0) Algorithm for estimating v'**
+
+`
+ - Input: the policy pi to be evaluated
+ - Input: a differentiable function vˆ : S x Rd -> R such that v'(terminal) = 0
+
+ - Initialize value-function weights w arbitrarily (e.g., w = 0) 
+ - Repeat (for each episode):
+   - Initialize S
+   - Repeat (for each step of episode): 
+     - Choose A ~ pi(. | S)
+     - Take action A, observe R, S'
+     -  w <- w + alpha [Gt - v'(St,w)] PartialDerivative(v'(St,w))
+     -  S <- S'
+  - until S is terminal`
