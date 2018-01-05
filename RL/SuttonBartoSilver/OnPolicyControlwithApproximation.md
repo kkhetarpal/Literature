@@ -26,3 +26,15 @@ The update for one-step Sarsa is given as below. This method is called **episodi
          - `w <-- w + alpha[R + gamma * q'(S,A,w) - q'(S,A,w)]PartialDerivative(q'(S,A,w))`
          - `S <-- S'`
          - `A <-- A'`
+
+
+**Average Reward**
+This setting applies to continuous problems, however, the agent here cares about both the immediate and future delayed rewards equally. With function approximation discounting is a problematic setup, hence we use the average reward setup.
+
+The quality of a policy is defined as the average rate of reward while following that policy, where the expectations are conditioned on the prior actions being taken according to the policy and the transition probabilities regardless of the state in which MDP starts or an early decision made. In other words, ergodicity is preserved.
+
+A steady state distribution is the special distribution under which if we select actions according to the policy pi, we stay in the same distribution. 
+
+  - In average reward setting, returns are defined as `Gt = Rt+1 - r(pi) + Rt+2 - r(pi)+ ..` i.e. the differences between the rewards and the average reward known as the **differential return**. The corresponding value functions are known as **differential value functions**
+  - Bellman equations apply here as well with simply removing discounts and replacing all rewards with difference of reward and true average reward.
+  - Similary there is a differential form of the two TD errors
