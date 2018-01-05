@@ -73,3 +73,13 @@ Since the true value of a state is the expected value of the return following it
 **Non-parametric** So far what we learnt is parametric approaches. Memory based function approximators are non-parametric in approach in that they are not limited to a fixed parameterized class of functions. This approach is also refered to as *lazy learning*. Herein, the system does not process until an output from the system is required. One of the ways they respond to a query is by **local learning**. These include methods such as quering the *nearest-neighbors*, or return a *weighted average*  of nearest-neighbors, or even *locally weighted regression*. 
 
 
+**Interest and Emphasis**
+During function approximation techniques, the resources are sparse and the approach may benefit if we did not treat all states equally. Targeted approach could fasten the process and boost the performance. The authors introduce two new concepts called **interest** and **emphasis**. 
+
+**Interest** indicates the degree to which we are interested in accurately valuing a particular state-action pair at a particular time t. **Emphasis** on the other hand is just a scalar which when multiplied with the update either emphasizes or de-emphasizes the learning done at a time t. These two combined give the following weight update equation:
+
+` w_t+n = w_t+n-1 + alpha * M_t [G_t:t+n - v'(St,w_t+n-1)] PartialDerivative(v'(St,w_t+n-1)) `
+
+where emphasis Mt is determined by
+
+`Mt = It + gamma^n * M_t-n `
