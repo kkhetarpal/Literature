@@ -6,3 +6,5 @@ Summary notes of Chapters from Sutton and Barto (Second Draft) and David Silver 
 * Chapter 4 [Dynamic Programming](https://github.com/kkhetarpal/Literature/blob/master/RL/SuttonBartoSilver/DynamicProgramming.md)
 * Chapter 5 [Monte Carlo Methods](https://github.com/kkhetarpal/Literature/blob/master/RL/SuttonBartoSilver/MonteCarloMethods.md)
 * Chapter 6 [Temoral Difference Learning](https://github.com/kkhetarpal/Literature/blob/master/RL/SuttonBartoSilver/TDLearning.md)
+* Chapter 9 [On Policy Prediction with Approximation](https://github.com/kkhetarpal/Literature/blob/master/RL/SuttonBartoSilver/OnPolicyPredictionWithApproximation.md)
+* Chapter 10 [On Policy Control with Approximation](https://github.com/kkhetarpal/Literature/blob/master/RL/SuttonBartoSilver/OnPolicyControlwithApproximation.md)
