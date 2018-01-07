@@ -30,3 +30,30 @@ If we look at the consecutive TD error updates, we would see that w will diverge
 - The danger is
   * not due to control
   * not due to learning or to uncertainities about the environmnet
+
+
+**Bellman Error, SGD in the Bellman Error**
+
+- The time-difference (TD) error is defined as
+ `δw(s)= Rt+1 + γv'(St+1)− v(St)`
+
+- Bellman Error is the expectation of the TD error
+ `BE = E[Rt+1 + γv'(St+1)− v(St) | St = s, A~pi]`
+
+- The authors then elaborately discuss the possibility of the objective functions to be:
+  * TD error, compute the Mean squared TD error, and then derive the weight update equations for SGD to this TD error. This is termed ad the **naive residual-gradient algorithm**. They further show that even though this algorithm converges but it does not converge to the correct value functions with a A-split example. They conclude by saying "Minimizing the TDE is naive; by penalizing all TD errors it achieves something more like temporal smoothing than accurate prediction".
+  * BE is further considered as the objective function to be minimized. BE being nothing but the expectation of the TD error is then used and similarly derived for SGD weight updates, resulting in the **residual-gradient algorithm**. Even thought this algorithm is guaranteed to converge to a minimum of the mean(BE) under the usual conditions on the step size parameter, there are limitations too. It is very slow empirically, still seems to converge to the wrong values, 
+
+- Next, the authors discuss how given any amount of data, the BE is not learnable. Minimizing the BE requires access to the underlying MDP. This thus limits the use of BE as an objective function to the model-based settings in RL.
+
+
+**Gradient TD Methods**
+
+- Here the authors consdier SGD methods for minimizing the Projected Bellman Error (PBE). I need to fully understand PBE still. TO DO. 
+
+**Emphatic-TD Methods**
+- State weightings are important, powerful, even magical, when using “genuine function approximation”
+(i.e., when the optimal solution can’t be approached)
+  * They are the difference between convergence and divergence in on-policy and off-policy TD learning
+  * They are needed to make the problem well-defined
+  * We can change the weighting by emphasizing some step more than others in learning
