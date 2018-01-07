@@ -9,7 +9,5 @@ Summary notes of Chapters from Sutton and Barto (Second Draft) and David Silver 
 * Chapter 9 [On Policy Prediction with Approximation](https://github.com/kkhetarpal/Literature/blob/master/RL/SuttonBartoSilver/OnPolicyPredictionWithApproximation.md)
 * Chapter 10 [On Policy Control with Approximation](https://github.com/kkhetarpal/Literature/blob/master/RL/SuttonBartoSilver/OnPolicyControlwithApproximation.md)
 * Chapter 11 [Off-Policy Methods with Approximation](https://github.com/kkhetarpal/Literature/blob/master/RL/SuttonBartoSilver/Off-PolicyMethodswithApproximation.md)
-* Chapter 12 [Eligibility Traces]
-(https://github.com/kkhetarpal/Literature/blob/master/RL/SuttonBartoSilver/EligibilityTraces.md)
-* Chapter 13 [Policy Gradient Methods]
-(https://github.com/kkhetarpal/Literature/blob/master/RL/SuttonBartoSilver/PolicyGradients.md)
+* Chapter 12 [Eligibility Traces](https://github.com/kkhetarpal/Literature/blob/master/RL/SuttonBartoSilver/EligibilityTraces.md)
+* Chapter 13 [Policy Gradient Methods](https://github.com/kkhetarpal/Literature/blob/master/RL/SuttonBartoSilver/PolicyGradients.md)
