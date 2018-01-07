@@ -24,9 +24,9 @@ If we look at the consecutive TD error updates, we would see that w will diverge
 
 **The Deadly Triad**
 - Danger of instability and divergence arises if all three of the following are used:
- * Function Approximation - significantly generalizing from large numbers of examples 
- * Off-policy training - learning about a policy from data not due to that policy, as in Q-learning, where we learn about the greedy policy from data with a necessarily more exploratory policy
- * Bootstrapping - learning value estimates from other value estimates,as in dynamic programming and temporal-difference learning 
+  * Function Approximation - significantly generalizing from large numbers of examples 
+  * Off-policy training - learning about a policy from data not due to that policy, as in Q-learning, where we learn about the greedy policy from data with a necessarily more exploratory policy
+  * Bootstrapping - learning value estimates from other value estimates,as in dynamic programming and temporal-difference learning 
 - The danger is
- * not due to control
- * not due to learning or to uncertainities about the environmnet
+  * not due to control
+  * not due to learning or to uncertainities about the environmnet
