@@ -13,9 +13,9 @@ With large state space, apart from memory, it is problematic that all states wou
 In most scenarios so far, we have seen that for each state encountered an *update target* value is generated. Supervised learning methods which need pairs of input output data to approximate the pattern in the form of a function can then be used for value prediction. In RL, each <state, return> pair could be treated as a training example.
 
 In RL however, the learning methods has further requirements:
-*ability to learn online as the agent interacts with the environment
-*learn from incremental data as acquired,
-*along with ability to handle non-stationary targets
+ - ability to learn online as the agent interacts with the environment
+ - learn from incremental data as acquired,
+ - along with ability to handle non-stationary targets
 
 In the tabular case, a continuous measure of prediction was not needed as the learned value function could come to true value function. Additionally update for one state did not affect the other states. On the contrary, in function approximation update at one state could alter the value for other states. Moreover, there are so many states, that not all can be completely accurate. The number of weights is way smaller than the number of states. This leads to the need to choose which states are more important for us. This is accomplished by specifying a **state weighing** or **distribution** u(s) representing how much one cares about the error in each state.
 
