@@ -1,4 +1,4 @@
-# [A Paper A Week]()
+# [A Paper A Week](https://github.com/kkhetarpal/Literature/blob/master/APaperAWeek/ReadMe.md)
 Paper Summaries - Goal: One Paper Each Week 
 
 # [RL, Meta/Transfer Learning, AI Safety - Literature](https://github.com/kkhetarpal/Literature/tree/master/RL/ReadingList)
