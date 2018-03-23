@@ -1,5 +1,5 @@
 # [A Paper A Week]()
-Inspired by [Shagun Sodhani](https://github.com/shagunsodhani/papers-I-read), I plan to update this space with summaries of papers I read more than usual updates: A paper A week 
+Paper Summaries - Goal: One Paper Each Week 
 
 # [RL, Meta/Transfer Learning, AI Safety - Literature](https://github.com/kkhetarpal/Literature/tree/master/RL/ReadingList)
 Repository of my reading lists, selected paper summaries, and corresponding links
